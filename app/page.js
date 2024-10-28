@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full justify-center flex">
       <Navbar/>
     </div>
   );

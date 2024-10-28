@@ -1,4 +1,5 @@
 import "./globals.css";
+import { roboto, anton } from "./fonts/fonts";
 
 export const metadata = {
   title: "",
@@ -9,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={``}
+        className={`${anton.variable} ${roboto.variable} antialiased`}
       >
         {children}
       </body>

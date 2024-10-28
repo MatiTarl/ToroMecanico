@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-geist-anton: "anton", sans-serif;
+  --font-roboto: "roboto", sans-serif;
+}
+
+.font-anton {
+  font-family: var(--font-geist-anton);
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}
 
 body {
+  font-family: var(--font-geist-anton);
   background-color: black;
   color: white;
 }
