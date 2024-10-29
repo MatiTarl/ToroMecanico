@@ -23,8 +23,8 @@ export default function Home() {
             </div>
           </footer>
         </div>
-        <div className="absolute top-0 bottom-0">
-          <video autoPlay muted loop src="/hombreEnToro4k.webm" className="object-cover object-center h-full 2xl:h-auto"></video>
+        <div className="absolute top-0 bottom-0 w-full h-full">
+          <video autoPlay muted loop src="/hombreEnToro4k.webm" className="object-cover object-center h-full w-full"></video>
         </div>
       </section>
     </div>
