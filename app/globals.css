@@ -19,6 +19,8 @@ body {
   font-family: var(--font-geist-anton);
   background-color: black;
   color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -29,8 +31,9 @@ body {
 .ratio {
   font-family: var(--font-geist-anton);
   font-weight: 900;
-  color: rgba(255, 0, 0, 0.6);
-  text-shadow:
+  color: rgba(174, 0, 0);
+  text-shadow: -5px 2px 0px rgba(0,0,0);
+  /* text-shadow:
   -14px 14px 0 rgba(0, 0, 0, 0.9),		
   -1px 1px 0 #00000000,
   -2px 2px 0 #00000000,
@@ -47,6 +50,6 @@ body {
   -13px 13px 0 #00000000,
   -14px 14px 0 #00000000,
   -15px 15px 35px rgba(0, 0, 0, 0.2),
-  -35px 15px 10px rgba(0, 0, 0, 0.1);
+  -35px 15px 10px rgba(0, 0, 0, 0.1); */
   transition: all .1s ;
 }

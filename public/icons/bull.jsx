@@ -11,7 +11,7 @@ const bullIcon = (props) => (
     y="0"
     version="1.1"
     viewBox="0 0 96 80"
-    fill="red"
+    // fill="red"
   >
     <path
       id="path2"
