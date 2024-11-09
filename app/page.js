@@ -1,49 +1,45 @@
-import Navbar from "./components/navbar/Navbar";
+import Header from "./components/header/Header";
 import Image from "next/image";
-import BullIcon from "@/public/icons/bull";
+import ImageBull from "@/public/headerImage1.jpg"
 
 export default function Home() {
   return (
-    <div>
-      <header className="w-full justify-between flex items-center px-10 py-5 top-0 fixed z-40 bg-opacity-50 bg-gray-50">
-        <div className="w-1/2 justify-center flex">
-          {/* <BullIcon/> */}
-          <h1 className="text-4xl ratio">TEXAS BULL</h1>
-        </div>
-        <Navbar />
-      </header>
-      <section className="bg-black h-screen w-full text-center relative overflow-hidden ">
-        <div className="relative z-30 h-full flex flex-col font-sans">
-          <header className=" pt-52">
-            <h2 className=" text-5xl font-semibold bg-gradient-to-r from-red-700 via-white to-red-700 text-transparent bg-clip-text">
-              Texto inicial
-            </h2>
-            <h5 className="text-xl">Sub texto</h5>
-          </header>
-
-          <footer className="flex-grow flex flex-col justify-end pb-32">
-            <div className="">
-              <a
-                href="#"
-                className="text-xl border-2 rounded font-medium px-12 py-2 inline-block"
-              >
-                Descubre más
-              </a>
+    <div className="flex flex-col">
+      <Header />
+      <section id="2-Section" className="py-7">
+        <div className="flex flex-col font-roboto">
+          <div className="flex justify-center">
+            <h1> <span className="text-rojoprincipal font-bold">Texas bull:</span> El proveedor y fabricante internacional de juegos mecanicos - <span className="text-rojoprincipal font-bold">desde hace más de 10 años.</span></h1>
+          </div>
+          <div className="pt-14 flex space-x-[20%]">
+            <div className="w-1/2 flex justify-center h-screen">
+              <div className=" flex flex-col flex-wrap content-center h-full">
+                <div className="w-2/3 flex flex-col flex-grow justify-center">
+                  <h1 className="text-5xl">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Fames imperdiet conubia urna eget amet.
+                  </h1>
+                </div>
+                <div className="flex flex-col flex-grow justify-center">
+                  <div className="">
+                    <h1 className="text-6xl text-rojoprincipal font-extrabold">Toros Mecanicos</h1>
+                  </div>
+                  <div className="pt-14">
+                    <a href="#">
+                      <div className="text-5xl font-medium border-rojoprincipal text-rojoprincipal border-2 px-12 py-1.5 inline-block text-center z-40">
+                        Descubir
+                      </div>
+                      <div className="w-72 h-[60px] bg-rojoprincipal opacity-20 absolute translate-x-4 -translate-y-11 z-0 hover:translate-x-0 hover:-translate-y-[62px] transition-transform "></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </footer>
+            <div className="w-1/3 flex items-end justify-end">
+              <div className="h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-70 absolute justify-start translate-y-5 -translate-x-80"></div>
+              <Image width={Infinity} height={Infinity} src={ImageBull} alt="ImageHeaderBull_1" className="z-40"></Image>
+            </div>
+          </div>
         </div>
-        <div className="absolute top-0 bottom-0 w-full h-full">
-          <video
-            autoPlay
-            muted
-            loop
-            src="/hombreEnToro4k.webm"
-            className="object-cover object-center h-full w-full opacity-70"
-          ></video>
-        </div>
-      </section>
-      <section>
-        <h1>Conoce mas sobre nuestro toros</h1>
       </section>
     </div>
   );

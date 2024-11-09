@@ -3,8 +3,8 @@ import "./module.css";
 
 export default function Navbar() {
   return (
-    <nav className="container flex justify-end w-full items-end">
-      <ul className="flex flex-row space-x-14 text-red-700 font-black text-shadow">
+    <nav className="container flex justify-center w-full">
+      <ul className="flex flex-row text-xl space-x-14 text-rojoprincipal font-black text-shadow">
         <li className="">
           <a href="">INICIO</a>
         </li>

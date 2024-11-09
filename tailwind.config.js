@@ -11,6 +11,7 @@ module.exports = {
         roboto: ["var(--font-roboto)", "sans-serif"],
       },
       colors: {
+        rojoprincipal: "rgba(213, 20, 53)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
