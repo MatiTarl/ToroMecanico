@@ -8,27 +8,24 @@ import ArrowDown from "@/public/icons/downArrow";
 const Header = () => {
   return (
     <div>
-      <header className="w-full justify-between flex items-center top-0 fixed z-40 h-24">
-        <div className="w-1/3 pl-10 pt-4 items-center flex space-x-5">
-          <Image
-            className="w-16"
-            width={Infinity}
-            height={Infinity}
-            src={imageIcon}
-            alt="IconoTexasBull"
-          />
-          <h1 className="text-4xl ratio">TEXAS BULL</h1>
-        </div>
-        <div className="bg-opacity-50 mt-4  w-1/2 h-16 flex items-center bordeCortado">
-          <Navbar />
+      <header className="w-full justify-between flex top-0 fixed z-50 h-16">
+        <div className="backdrop-blur-[4px] w-full justify-between flex">
+          <div className="md:w-1/3 pl-10 md:pl-20 items-center flex">
+            <h1 className="text-xl md:text-4xl ratio">TEXAS BULL</h1>
+          </div>
+          <div className="w-1/2 h-16 flex items-center bordeCortado">
+            <Navbar />
+          </div>
         </div>
       </header>
       <section className="bg-black h-screen w-full text-center relative overflow-hidden ">
         <div className="relative z-30 h-full flex flex-col font-sans">
           <footer className="flex-grow flex flex-col justify-end pb-10">
-            <h3 className="pb-10 text-white font-roboto text-4xl">Los Mejores Juegos Mecanicos</h3>
-            <a href="#">
-              <div className="text-xl border-2 rounded font-medium px-4 py-2 inline-block text-white">
+            <h3 className="pb-10 text-white font-roboto text-2xl md:text-4xl">
+              Los Mejores Juegos Mecanicos
+            </h3>
+            <a href="#2-Section">
+              <div className=" md:text-xl border-2 rounded font-medium px-2 py-1 md:px-4 md:py-2 inline-block text-white">
                 <ArrowDown />
               </div>
             </a>

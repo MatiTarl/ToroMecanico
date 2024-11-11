@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   --font-geist-anton: "anton", sans-serif;
   --font-roboto: "roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .font-anton {
