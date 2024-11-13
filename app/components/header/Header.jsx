@@ -1,3 +1,4 @@
+"use-client"
 import React from "react";
 import Image from "next/image";
 import Navbar from "../navbar/Navbar";
@@ -8,12 +9,12 @@ import ArrowDown from "@/public/icons/downArrow";
 const Header = () => {
   return (
     <div>
-      <header className="w-full justify-between flex top-0 fixed z-50 h-16">
-        <div className="backdrop-blur-[4px] w-full justify-between flex">
-          <div className="md:w-1/3 pl-10 md:pl-20 items-center flex">
+      <header className="w-full justify-between flex top-0 fixed z-50 h-16 ">
+        <div className="w-full backdrop-blur-[4px] h-full justify-between flex flex-col md:flex-row">
+          <div className="md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
             <h1 className="text-xl md:text-4xl ratio">TEXAS BULL</h1>
           </div>
-          <div className="w-1/2 h-16 flex items-center bordeCortado">
+          <div className="w-full absolute md:sticky md:w-1/2 h-16 flex items-center bordeCortado ">
             <Navbar />
           </div>
         </div>

@@ -35,8 +35,8 @@ export default function Home() {
               </div>
             </div>
             <div className="w-1/3 flex items-end justify-end">
-              <div className="rounded-sm h-1/2 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[4%] lg:-translate-x-[100%] transition-transform "></div>
-              <Image width={Infinity} height={Infinity} src={ImageBull} alt="ImageHeaderBull_1" className="z-10 rounded-s-sm"></Image>
+              <div className="rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[4%] lg:-translate-x-[100%] transition-transform "></div>
+              <Image width={Infinity} height={Infinity} src={ImageBull} alt="ImageHeaderBull_1" className="z-10 rounded-s-md"></Image>
             </div>
           </div>
         </div>
