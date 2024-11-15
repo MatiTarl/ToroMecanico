@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ["var(--font-roboto)", "sans-serif"],
+        anton: ["var(--font-geist-anton)", "sans-serif"],
+        lato: ["var(--font-lato)", "sans-serif"],
       },
       colors: {
         rojoprincipal: "rgba(213, 20, 53)",

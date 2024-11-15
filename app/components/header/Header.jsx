@@ -12,7 +12,7 @@ const Header = () => {
       <header className="w-full justify-between flex top-0 fixed z-50 h-16 ">
         <div className="w-full backdrop-blur-[4px] h-full justify-between flex flex-col md:flex-row">
           <div className="md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
-            <h1 className="text-xl md:text-4xl ratio">TEXAS BULL</h1>
+            <h1 className="text-2xl sm:text-2xl md:text-4xl ratio">TEXAS BULL</h1>
           </div>
           <div className="w-full absolute md:sticky md:w-1/2 h-16 flex items-center bordeCortado ">
             <Navbar />
@@ -25,8 +25,8 @@ const Header = () => {
             <h3 className="pb-10 text-white font-roboto text-2xl md:text-4xl">
               Los Mejores Juegos Mecanicos
             </h3>
-            <a href="#2-Section">
-              <div className=" md:text-xl border-2 rounded font-medium px-2 py-1 md:px-4 md:py-2 inline-block text-white">
+            <a href="#1-Section">
+              <div className=" md:text-xl font-medium rounded animate-bounce w-7 md:w-10 inline-block text-white">
                 <ArrowDown />
               </div>
             </a>

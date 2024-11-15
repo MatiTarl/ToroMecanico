@@ -9,6 +9,7 @@ html{
 :root {
   --font-geist-anton: "anton", sans-serif;
   --font-roboto: "roboto", sans-serif;
+  --font-lato: "lato", sans-serif;
 }
 
 ::-webkit-scrollbar {
