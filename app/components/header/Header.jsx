@@ -8,8 +8,8 @@ import ArrowDown from "@/public/icons/downArrow";
 // --------------------IMPORT ICONOS END---------------------
 const Header = () => {
   return (
-    <div>
-      <header className="w-full justify-between flex top-0 fixed z-50 h-16 ">
+    <div className="shadow-md shadow-slate-400">
+      <header className="w-full justify-between flex top-0 fixed z-50 h-16">
         <div className="w-full backdrop-blur-[4px] h-full justify-between flex flex-col md:flex-row">
           <div className="md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
             <h1 className="text-2xl sm:text-2xl md:text-4xl ratio">TEXAS BULL</h1>
@@ -23,7 +23,7 @@ const Header = () => {
         <div className="relative z-30 h-full flex flex-col font-sans">
           <footer className="flex-grow flex flex-col justify-end pb-10">
             <h3 className="pb-10 text-white font-roboto text-2xl md:text-4xl">
-              Los Mejores Juegos Mecanicos
+              Lorem ipsum dolor, adipisicing elit.
             </h3>
             <a href="#1-Section">
               <div className=" md:text-xl font-medium rounded animate-bounce w-7 md:w-10 inline-block text-white">

@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         rojoprincipal: "rgba(213, 20, 53)",
+        rojosecundario: "rgb(185, 35, 38)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
