@@ -10,8 +10,8 @@ import WhatsIcon from "@/public/icons/whatsapp";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-28 mt-10 flex-col justify-center space-x-10 md:mt-5 md:h-52 md:flex md:flex-row md:space-x-0 md:items-center bg-rojosecundario text-slate-100 font-lato md:text-xl">
-      <div className="hidden md:flex items-center w-[33%] justify-center">
+    <footer className="w-full h-28 mt-10 flex flex-col justify-center items-center md:mt-5 md:h-52 md:flex md:flex-row md:space-x-0 md:items-center bg-rojosecundario text-slate-100 font-lato md:text-xl ">
+      <div className="hidden md:flex md:items-center md:w-[33%] md:justify-center">
         <div className="w-[100px] h-32">
           <Image
             src={TexasIcon}

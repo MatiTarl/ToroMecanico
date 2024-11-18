@@ -9,8 +9,8 @@ import ArrowDown from "@/public/icons/downArrow";
 const Header = () => {
   return (
     <div className="shadow-md shadow-slate-400">
-      <header className="w-full justify-between flex top-0 fixed z-50 h-16">
-        <div className="w-full backdrop-blur-[4px] h-full justify-between flex flex-col md:flex-row">
+      <header className="w-full justify-between flex top-0 fixed z-50 h-16 backdrop-blur-[4px]">
+        <div className="w-full h-full justify-between flex flex-col md:flex-row">
           <div className="md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
             <h1 className="text-2xl sm:text-2xl md:text-4xl ratio">TEXAS BULL</h1>
           </div>
