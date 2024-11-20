@@ -1,5 +1,5 @@
 import Header from "./components/header/Header";
-import DescubrirSection from "./components/DescubrirSection/DescubrirSection";
+import DescubrirSection from "./components/Section_1/DescubrirSection";
 import Footer from "./components/footer/Footer";
 
 export default function Home() {

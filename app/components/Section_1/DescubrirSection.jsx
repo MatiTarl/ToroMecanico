@@ -40,7 +40,7 @@ export default function DescubrirSection() {
             </div>
           </div>
           <div className=" w-full h-full md:max-h-none md:w-1/3 flex justify-end">
-            <div className="hidden md:flex rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] lg:-translate-x-[100%] transition-transform "></div>
+            <div className="hidden md:flex rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] [1920px]:translate-y-[17%] lg:-translate-x-[100%] transition-transform "></div>
             <Image
               width={Infinity}
               height={Infinity}
