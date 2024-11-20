@@ -11,7 +11,7 @@ import WhatsIcon from "@/public/icons/whatsapp";
 export default function Footer() {
   return (
     <footer className="w-full h-28 mt-10 flex flex-col justify-center items-center md:mt-5 md:h-52 md:flex md:flex-row md:space-x-0 md:items-center bg-rojosecundario text-slate-100 font-lato md:text-xl ">
-      <div className="hidden md:flex md:items-center md:w-[33%] md:justify-center">
+      <div className="hidden md:flex md:items-center md:w-[20%] md:justify-center">
         <div className="w-[100px] h-32">
           <Image
             src={TexasIcon}
@@ -21,9 +21,9 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="flex justify-center flex-col items-center">
+      <div className="flex justify-center flex-col items-center md:w-[40%]">
         <h1 className="hidden md:flex ">Seguinos en nuestras redes:</h1>
-        <ul className=" flex justify-center space-x-5 pt-5 md:space-x-5 md:w-[33%] md:items-center ">
+        <ul className=" flex justify-center space-x-5 pt-5 md:space-x-5 md:items-center ">
           <li className="transition-transform duration-500 hover:-translate-y-2 ">
             <a className="" href="#">
               <FaceIcon className="" />
@@ -41,29 +41,29 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="md:items-center md:flex md:w-[33%] md:justify-center">
-      <ul className="flex justify-center space-x-5 py-5 md:flex-col md:space-x-0 md:space-y-2">
-        <li className="">
-          <a className="" href="#">
-            Inicio
-          </a>
-        </li>
-        <li className="">
-          <a className="" href="#">
-            Nosotros
-          </a>
-        </li>
-        <li className="">
-          <a className="" href="#">
-            Servicios
-          </a>
-        </li>
-        <li className="">
-          <a className="" href="#">
-            Contacto
-          </a>
-        </li>
-      </ul>
+      <div className="md:items-center md:flex md:w-[40%] md:justify-center">
+        <ul className="flex justify-center space-x-5 py-5 md:flex-col md:space-x-0 md:space-y-2">
+          <li className="">
+            <a className="" href="#">
+              Inicio
+            </a>
+          </li>
+          <li className="">
+            <a className="" href="#">
+              Nosotros
+            </a>
+          </li>
+          <li className="">
+            <a className="" href="#">
+              Servicios
+            </a>
+          </li>
+          <li className="">
+            <a className="" href="#">
+              Contacto
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   );

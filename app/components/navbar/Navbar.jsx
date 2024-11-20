@@ -17,18 +17,18 @@ export default function Navbar() {
             isOpen ? "max-h-96" : "max-h-0" 
           } overflow-hidden transition-all duration-700 ease-out w-full justify-center md:flex md:items-center md:max-h-full mx-3 pt-52 md:pt-0`}
         >
-          <ul className={`flex flex-col text-xl md:flex-row md:space-x-14 text-black md:text-white text-shadow bg-slate-100 md:bg-transparent rounded-lg font-lato font-bold mr-auto ml-auto right-0 left-0`}>
+          <ul className={`flex flex-col text-base xl:text-xl md:flex-row md:space-x-14 text-black md:text-white text-shadow bg-slate-100 md:bg-transparent rounded-lg font-lato font-bold mr-auto ml-auto right-0 left-0 `}>
             <li className="mx-1 my-1 hover:bg-slate-500 hover:bg-opacity-25 transition-all duration-200 ease-out rounded-md text-start">
-              <a href="#" className="px-4">Inicio</a>
+              <a href="#" className="px-4 lg:px-0 2xl:px-4">Inicio</a>
             </li>
             <li className="mx-1 my-1 hover:bg-slate-500 hover:bg-opacity-25 transition-all duration-200 ease-out rounded-md text-start">
-              <a href="/productos" className="px-4">Productos</a>
+              <a href="/productos" className="px-4 lg:px-0 2xl:px-4">Productos</a>
             </li>
             <li className="mx-1 my-1 hover:bg-slate-500 hover:bg-opacity-25 transition-all duration-200 ease-out rounded-md text-start">
-              <a href="/nosotros" className="px-4">Nosotros</a>
+              <a href="/nosotros" className="px-4 lg:px-0 2xl:px-4">Nosotros</a>
             </li>
             <li className="mx-1 my-1 hover:bg-slate-500 hover:bg-opacity-25 transition-all duration-200 ease-out rounded-md text-start">
-              <a href="/contactanos" className="px-4">Contactanos</a>
+              <a href="/contactanos" className="px-4 lg:px-0 2xl:px-4">Contactanos</a>
             </li>
           </ul>
         </div>
