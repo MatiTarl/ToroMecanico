@@ -9,12 +9,12 @@ import ArrowDown from "@/public/icons/downArrow";
 const Header = () => {
   return (
     <div className="shadow-md shadow-slate-400">
-      <header className="w-full justify-between flex top-0 fixed z-50 h-16 backdrop-blur-[4px]">
+      <header className="w-full justify-between flex top-0 fixed z-50 h-16 bg-white border-b border-slate-700">
         <div className="w-full h-full justify-between flex flex-col md:flex-row">
-          <div className="md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
-            <h1 className="text-2xl sm:text-2xl md:text-4xl ratio">TEXAS BULL</h1>
+          <div className="w-1/2 md:w-1/3 pl-10 md:pl-20 items-center flex h-full ">
+            <h1 className="text-2xl sm:text-2xl md:text-4xl ratio text-rojosecundario">TEXAS BULL</h1>
           </div>
-          <div className="w-full absolute md:sticky md:w-1/2 h-16 flex items-center bordeCortado ">
+          <div className="w-full absolute md:sticky md:w-1/2 h-16 flex items-center bordeCortado">
             <Navbar />
           </div>
         </div>

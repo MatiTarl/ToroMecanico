@@ -7,3 +7,21 @@
       text-shadow: -1px 1px 5px rgb(0, 0, 0);
     }
   }
+
+  .ul {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  @media (width >= 768px) {
+    .ul {
+      opacity: 1;
+    }
+  
+  }
+  
+  .show {
+    transform: translateY(0);
+    opacity: 1;
+  }
