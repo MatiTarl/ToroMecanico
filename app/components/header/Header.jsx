@@ -9,9 +9,7 @@ import ArrowDown from "@/public/icons/downArrow";
 const Header = () => {
   return (
     <div className="shadow-md shadow-slate-400">
-      <header className="w-full justify-between flex top-0 fixed z-50 h-16 bg-white">
-        <Navbar />
-      </header>
+      <Navbar />
       <section className="bg-black h-screen w-full text-center relative overflow-hidden ">
         <div className="relative z-30 h-full flex flex-col font-sans">
           <footer className="flex-grow flex flex-col justify-end pb-10">

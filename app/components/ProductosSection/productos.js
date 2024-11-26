@@ -23,6 +23,31 @@ const ObtenerProductos = () => {
             descripcion: "descripcion de prueba 2",
             images: [image2, image22, image23]
         },
+        {
+            name: "Producto de prueba 2",
+            descripcion: "descripcion de prueba 2",
+            images: [image2, image22, image23]
+        },
+        {
+            name: "Producto de prueba 2",
+            descripcion: "descripcion de prueba 2",
+            images: [image2, image22, image23]
+        },
+        {
+            name: "Producto de prueba 1",
+            descripcion: "descripcion de prueba 1",
+            images: [image1, image12, image13, image14, image15]
+          },
+          {
+            name: "Producto de prueba 1",
+            descripcion: "descripcion de prueba 1",
+            images: [image1, image12, image13, image14, image15]
+          },
+          {
+            name: "Producto de prueba 1",
+            descripcion: "descripcion de prueba 1",
+            images: [image1, image12, image13, image14, image15]
+          },
     ]
 
     return productos;
