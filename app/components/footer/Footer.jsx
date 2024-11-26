@@ -44,22 +44,22 @@ export default function Footer() {
       <div className="md:items-center md:flex md:w-[40%] md:justify-center">
         <ul className="flex justify-center space-x-5 py-5 md:flex-col md:space-x-0 md:space-y-2">
           <li className="">
-            <a className="" href="#">
+            <a className="hover:border-b border-rojoprincipal  hover:border-black transition-all duration-300 ease-linear focus:border-b focus:border-black" href="#">
               Inicio
             </a>
           </li>
           <li className="">
-            <a className="" href="#">
+            <a className="hover:border-b border-rojoprincipal  hover:border-black transition-all duration-300 ease-linear focus:border-b focus:border-black" href="#">
               Nosotros
             </a>
           </li>
           <li className="">
-            <a className="" href="#">
+            <a className="hover:border-b border-rojoprincipal  hover:border-black transition-all duration-300 ease-linear focus:border-b focus:border-black" href="#">
               Servicios
             </a>
           </li>
           <li className="">
-            <a className="" href="#">
+            <a className="hover:border-b border-rojoprincipal  hover:border-black transition-all duration-300 ease-linear focus:border-b focus:border-black" href="#">
               Contacto
             </a>
           </li>
