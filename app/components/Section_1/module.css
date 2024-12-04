@@ -1,0 +1,24 @@
+.sec2 {
+    animation: revealing; /* Nombre de la animación */
+    animation-timeline: view(block); /* Vincula la animación con el viewport */
+    animation-range: cover 0% cover 50%; /* La animación se ejecuta cuando el elemento está entre el 0% y 50% del viewport */
+    margin: 0px; /* Reseteo de margen */
+  }
+.svg {
+    animation: revealing; /* Nombre de la animación */
+    animation-timeline: view(20%); /* Vincula la animación con el viewport */
+    animation-range: cover 0% cover 50%; /* La animación se ejecuta cuando el elemento está entre el 0% y 50% del viewport */
+}
+  
+  @keyframes revealing {
+    from {
+      margin-left: 100vw; /* Comienza fuera de la pantalla */
+      filter: blur(50px); /* Efecto de desenfoque */
+      opacity: 0.5; /* Transparencia inicial */
+    }
+    to {
+      margin: 0px;
+      filter: blur(0px); /* Elimina el desenfoque */
+      opacity: 1; /* Totalmente visible */
+    }
+  }

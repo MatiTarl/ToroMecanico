@@ -4,6 +4,9 @@
 import React from "react";
 import "./module.css";
 import { useState } from "react";
+import logoTexas from "@/public/LogoNavbar.png";
+import logoTexas2 from "@/public/LogoNavbar2.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +16,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full justify-between flex top-0 fixed z-50 h-16 bg-white">
-      <div className="w-full h-full justify-between flex flex-col md:flex-row border-b border-black border-opacity-20 xl:items-center">
+    <nav className="w-full justify-between flex top-0 fixed z-50 h-16 bg-black">
+      <div className="w-full h-full justify-between flex flex-col md:flex-row border-b border-white border-opacity-20 xl:items-center ">
         <div className="w-1/2 md:w-1/3 pl-10 md:pl-20 items-center flex h-full">
           <a href="/">
             <h1 className="text-2xl sm:text-2xl md:text-4xl ratio text-rojosecundario">
-              TEXAS BULL
+              <Image src={logoTexas2} alt="Logo" width={Infinity} height={Infinity} className="max-w-28"/>
             </h1>
           </a>
         </div>
@@ -33,10 +36,10 @@ export default function Navbar() {
                     isOpen ? "show" : ""
                   } ul text-base xl:text-xl md:flex-row md:space-x-4 xl:space-x-10 text-black bg-white md:bg-transparent rounded-b-sm font-lato font-bold mr-auto right-0 left-0 py-2 md:py-0 grid grid-cols-2 md:grid-cols-none md:flex`}
                 >
-                  <li className="mx-1 my-1 xl:mt-0 transition-all duration-200 ease-out rounded-md text-center ">
+                  <li className="mx-1 my-1 xl:mt-0 transition-all duration-200 ease-out rounded-md text-center  ">
                     <a
                       href="/"
-                      className="px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
+                      className="lg:text-white  px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
                     >
                       Inicio
                     </a>
@@ -44,7 +47,7 @@ export default function Navbar() {
                   <li className="mx-1 my-1 xl:mt-0 rounded-md text-center">
                     <a
                       href="/productos"
-                      className="px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
+                      className="lg:text-white px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
                     >
                       Productos
                     </a>
@@ -52,7 +55,7 @@ export default function Navbar() {
                   <li className="mx-1 my-1 xl:mt-0 rounded-md text-center">
                     <a
                       href="/nosotros"
-                      className="px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
+                      className="lg:text-white px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
                     >
                       Nosotros
                     </a>
@@ -60,7 +63,7 @@ export default function Navbar() {
                   <li className="mx-1 my-1 xl:mt-0 rounded-md text-center">
                     <a
                       href="/contactanos"
-                      className="px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
+                      className="lg:text-white px-4 lg:px-0 2xl:px-4 hover:border-b hover:border-rojosecundario transition-all duration-300 ease-linear focus:border-b focus:border-rojosecundario"
                     >
                       Contactanos
                     </a>
@@ -82,7 +85,8 @@ export default function Navbar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    stroke="#B92326"
+                    stroke="white"
+                    // stroke="#B92326"
                     d={
                       isOpen
                         ? "M6 18L18 6M6 6l12 12"

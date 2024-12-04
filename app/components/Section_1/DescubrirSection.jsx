@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import ImageBull from "@/public/headerImage1.jpg";
+import "./module.css";
 
 export default function DescubrirSection() {
   return (
-    <section id="1-Section" className=" py-5 md:py-7">
+    <section id="1-Section" className="py-5 md:py-7">
       <div className="flex flex-col font-roboto">
-        <div className="flex justify-center text-center text-xs px-3 md:px-0 md:text-base">
+        <div className="sec2 flex justify-center text-center text-xs px-3 md:px-0 md:text-base">
           <h1>
             <span className="text-rojoprincipal font-bold">Texas bull:</span> El
             proveedor y fabricante internacional de juegos mecanicos -{" "}
@@ -18,7 +19,7 @@ export default function DescubrirSection() {
         <div className="flex flex-row-reverse pt-10 md:pt-14 md:flex-row space-x-5 md:space-x-[20%]">
           <div className="flex justify-center md:w-1/2 md:h-screen">
             <div className=" flex flex-col flex-wrap content-center h-full">
-              <div className="w-2/3 flex flex-col flex-grow justify-center">
+              <div className="sec2Left w-2/3 flex flex-col flex-grow justify-center">
                 <h1 className="text-sm lg:text-3xl xl:text-4xl 2xl:text-5xl">
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Fames
                   imperdiet conubia urna eget amet.
@@ -33,7 +34,7 @@ export default function DescubrirSection() {
                     <div className="text-sm lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium border-rojoprincipal text-rojoprincipal border-2 px-6 py-0.5 md:px-12 md:py-1.5 inline-block text-center z-40">
                       Descubir
                     </div>
-                    <div className="w-[108px] h-[26px] lg:w-[13.5rem] lg:h-[52px] xl:w-60 xl:h-[54px] 2xl:w-72 2xl:h-[60px]  bg-rojoprincipal opacity-20 absolute hover:translate-x-0 hover:-translate-y-7 translate-x-2 -translate-y-5 md:translate-x-4 md:-translate-y-11 md:hover:translate-x-0 lg:hover:-translate-y-[54px] xl:hover:-translate-y-[56px]  2xl:hover:-translate-y-[62px] transition-transform duration-500 z-0 "></div>
+                    <div className=" w-[108px] h-[26px] lg:w-[13.5rem] lg:h-[52px] xl:w-60 xl:h-[54px] 2xl:w-72 2xl:h-[60px]  bg-rojoprincipal opacity-20 absolute hover:translate-x-0 hover:-translate-y-7 translate-x-2 -translate-y-5 md:translate-x-4 md:-translate-y-11 md:hover:translate-x-0 lg:hover:-translate-y-[54px] xl:hover:-translate-y-[56px]  2xl:hover:-translate-y-[62px] transition-transform duration-500 z-0 "></div>
                   </a>
                 </div>
               </div>
