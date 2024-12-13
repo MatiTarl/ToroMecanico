@@ -8,20 +8,83 @@
     }
   }
 
-  .ul {
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    transform: translateY(-100%);
-    opacity: 0;
-  }
+  
 
+ 
   @media (width >= 768px) {
-    .ul {
+    .navbar-menu-animacion {
       opacity: 1;
     }
-  
+
   }
   
-  .show {
-    transform: translateY(0);
-    opacity: 1;
+
+
+  
+  @media (width >= 768px) {
+    .animated-link {
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+    
+    .animated-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 30px;
+      height: 2px;
+      background-color: #ecc238; /* Color inicial del borde */
+      transition: all 0.5s ease;
+      transform: translateX(-50%);
+    }
+    
+    
+    .animated-link:hover::after {
+      width: 80%; /* Se estira el borde a todo el ancho */
+      background-color: #ffffff; /* Cambia el color del borde */
+    }
   }
+
+  @media (width <= 768px) {
+    .navbar-menu-animacion {
+      right: 0px;
+      position: absolute;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      transform: translateX(100%); /* Fuera de la pantalla por la derecha */
+      opacity: 0; /* Opcional: oculta mientras está fuera */
+    }
+    
+    .navbar-menu-animacion.show {
+      transform: translateX(0); /* Menú en su posición normal */
+      opacity: 1; /* Totalmente visible */
+    }
+
+    svg path{
+      transition: d 1s ease-in-out;
+    }
+
+    svg {
+      transition: transform 1s ease-in-out; /* Anima transformaciones */
+    }
+    
+    .svg-open {
+      animation: rotateAndScale 1s ease-in-out;
+    }
+    
+    .svg-closed {
+      transform: rotate(0deg); /* Vuelve al estado inicial cuando está cerrado */
+    }
+
+    @keyframes rotateAndScale {
+      0% {
+        transform: rotate(0deg) scale(1);
+      }
+      100% {
+        transform: rotate(90deg) scale(1);
+      }
+    }
+    
+  }
+  

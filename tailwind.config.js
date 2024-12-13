@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,6 +12,7 @@ module.exports = {
         roboto: ["var(--font-roboto)", "sans-serif"],
         anton: ["var(--font-geist-anton)", "sans-serif"],
         lato: ["var(--font-lato)", "sans-serif"],
+        alfaSlabOne : ["var(--alfaSlabOne)", "sans-serif"]
       },
       colors: {
         rojoprincipal: "rgba(213, 20, 53)",

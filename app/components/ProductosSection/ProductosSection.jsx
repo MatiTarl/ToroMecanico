@@ -1,6 +1,7 @@
 import React from "react";
 import ObtenerProductos from "./productos";
 import Image from "next/image";
+import CardProductos from "../cardProductos/CardProductos";
 
 const ProductosSection = () => {
   const productosToMap = ObtenerProductos();
@@ -11,7 +12,7 @@ const ProductosSection = () => {
         {productosToMap.map((producto, key) => {
           return (
               <div className="flex w-full justify-center items-center" key={key}>
-                <div
+                {/* <div
                   className={`w-[90%] h-96 max-w-[250px] rounded-sm border border-rojoprincipal shadow items-center flex flex-col justify-between`}
                 >
                   <div className="h-1/2 flex justify-start items-center w-full">
@@ -29,7 +30,8 @@ const ProductosSection = () => {
                     <a href="" className="text-center ">Consultar precio</a>
                     </button>
                   </div>
-                </div>
+                </div> */}
+                <CardProductos producto={producto} />
               </div>
           );
         })}

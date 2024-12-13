@@ -23,3 +23,29 @@
     transform: translateX(0%);
   }
 }
+
+@media (width >= 768px) {
+  .animated-link-footer {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .animated-link-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0px;
+    height: 1px;
+    background-color: #ffffff; /* Color inicial del borde */
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+  }
+  
+  .animated-link-footer:hover::after {
+    width: 100%; /* Se estira el borde a todo el ancho */
+    background-color: #ffffff; /* Cambia el color del borde */
+  }
+
+}

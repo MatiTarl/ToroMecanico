@@ -32,7 +32,19 @@ export const lato = localFont({
 });
 
 export const anton = localFont({
-    src: "./Anton-Regular.ttf",
-    variable: "--font-geist-anton",
-    weight: "400"
-  })
+  src: "./Anton-Regular.ttf",
+  variable: "--font-geist-anton",
+  weight: "400"
+})
+
+
+export const alfaSlabOne = localFont({
+  src: [
+    {
+      path: "./AlfaSlabOne-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-alfa-slab-one",
+});

@@ -30,7 +30,7 @@ export default function DescubrirSection() {
                   Toros Mecanicos
                 </h1>
                 <div className="pt-5 md:pt-14">
-                  <a href="#">
+                  <a href="/productos">
                     <div className="text-sm lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium border-rojoprincipal text-rojoprincipal border-2 px-6 py-0.5 md:px-12 md:py-1.5 inline-block text-center z-40">
                       Descubir
                     </div>
