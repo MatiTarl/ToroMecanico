@@ -106,7 +106,7 @@ export default function Navbar() {
                 isOpenProductsMid && screenSize.width >= 758
                   ? "showProducts"
                   : ""
-              } navbar-menu-Products-animacion rounded-sm border-slate-300  grid-cols-1 grid text-black md:justify-center md:items-center bg-gradient-to-t from-white via-white to-transparent`}
+              } navbar-menu-Products-animacion rounded-sm border-slate-300  grid-cols-1 grid text-black md:justify-center md:items-center md:bg-gradient-to-t from-white via-white to-transparent`}
             >
               <li className="py-1 mt-10">
                 <a
