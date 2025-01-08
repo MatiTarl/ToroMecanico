@@ -13,31 +13,29 @@ export default function Navbar() {
   const [isOpenProductsMid, setisOpenProductsMid] = useState(false);
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
 
-  // Estado del menu para celular
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Estado del subMenu de productos para celulares
   const toggleProduct = () => {
     setIsOpenProducts(!isOpenProducts);
   };
-  // Estado del subMenu de productos para Notebooks y computadoras
-  const toggleProductMid = () => {
-    setisOpenProductsMid(!isOpenProductsMid);
+
+  const toggleOpenProductMid = () => {
+    setisOpenProductsMid(true);
+  };
+
+  const toggleCloseProductMid = () => {
+    setisOpenProductsMid(false);
   };
 
   useEffect(() => {
-    // Verifica que estás en el lado del cliente
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
     };
-    // Llama a la función una vez para establecer el tamaño inicial
     handleResize();
-    // Agrega un event listener para cambios de tamaño
     window.addEventListener("resize", handleResize);
-    // Limpia el event listener al desmontar el componente
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -96,17 +94,17 @@ export default function Navbar() {
           </li>
           <li
             className="py-2 md:py-0 animated-link px-4 justify-center flex"
-            onMouseEnter={() => toggleProductMid()}
-            onMouseLeave={() => toggleProductMid()}
+            onMouseEnter={() => toggleOpenProductMid()}
+            onMouseLeave={() => toggleCloseProductMid()}
             style={{ letterSpacing: "0.1em" }}
           >
-            <button onClick={toggleProduct}>Productos</button>
+            <button onClick={toggleProduct}>{screenSize.width >= 758 ? <a href="/productos">Productos</a> : "productos" }</button>
             <ul
               className={`${
                 isOpenProductsMid && screenSize.width >= 758
                   ? "showProducts"
                   : ""
-              } navbar-menu-Products-animacion rounded-sm border-slate-300  grid-cols-1 grid text-black md:justify-center md:items-center md:bg-gradient-to-t from-white via-white to-transparent`}
+              } navbar-menu-Products-animacion rounded-sm top-5 grid-cols-1 grid text-black md:justify-center md:items-center md:bg-gradient-to-t from-white via-white to-transparent`}
             >
               <li className="py-1 mt-10">
                 <a
@@ -169,7 +167,7 @@ export default function Navbar() {
         <div
           className={`${
             isOpenProducts && isOpen && screenSize.width <= 758 ? "showProducts" : ""
-          } conectorMenu md:hidden w-6 h-[3px] absolute bg-black top-[122px] right-[47.5%] z-50 `}
+          } conectorMenu md:hidden w-[5%] items-center justify-center h-[3px] absolute bg-black top-[122px] right-0 left-[50%] z-50 `}
         ></div>
         <ul
           className={`${
@@ -179,21 +177,21 @@ export default function Navbar() {
           <li className="py-1">
             <a
               href="/"
-              className="block px-4"
+              className="block px-4 text-center"
               style={{ letterSpacing: "0.1em" }}
             >
               Producto
             </a>
           </li>
           <li className="py-1 ">
-            <a className="block px-4" style={{ letterSpacing: "0.1em" }}>
+            <a className="block px-4 text-center" style={{ letterSpacing: "0.1em" }}>
               Producto
             </a>
           </li>
           <li className="py-1">
             <a
               href="/nosotros"
-              className="block px-4"
+              className="block px-4 text-center"
               style={{ letterSpacing: "0.1em" }}
             >
               Producto
@@ -202,7 +200,7 @@ export default function Navbar() {
           <li className="py-1">
             <a
               href="/contactanos"
-              className="block px-4"
+              className="block px-4 text-center"
               style={{ letterSpacing: "0.1em" }}
             >
               Producto

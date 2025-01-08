@@ -2,8 +2,6 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import ProductosSection from "../components/ProductosSection/ProductosSection";
 
-
-
 export default function productos() {
   return (
     <div className="flex flex-col w-full h-full ">
