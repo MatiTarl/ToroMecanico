@@ -161,6 +161,9 @@
           transform: scale(1);
           transform: translateY(0);
         }
+        .table{
+          opacity: 0;
+        }
       }
       .contents {
         padding: 5%;

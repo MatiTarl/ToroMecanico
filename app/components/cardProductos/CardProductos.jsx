@@ -1,16 +1,25 @@
+import Image from "next/image";
 import "./module.css";
 
 
-const CardProductos = ({producto}) => {
+const CardProductos = ({ producto }) => {
   return (
     <div className="wrapper">
-      <div className={`container  bg-${producto.image}`}>
-        <div className="top"></div>
+      <div className={`container`}>
+        <div className="top flex items-center">
+          <Image
+            className="w-full"
+            src={producto.images[0]}
+            width={80}
+            height={80}
+            alt="ImageProtada"
+          />
+        </div>
         <div className="bottom">
-          <div className="left">
-            <div className="details">
-              <h1>Lorem ipsum dolor sit</h1>
-              <a href={""}>
+          <div className=" bg-slate-400 h-full w-1/2 flex items-center justify-center">
+            <div className="flex flex-col items-center w-full">
+              <h1>{producto.name}</h1>
+              <a href={""} className="flex items-center justify-center">
                 <p>Consultar Precio</p>
               </a>
             </div>
@@ -23,38 +32,41 @@ const CardProductos = ({producto}) => {
         </div>
         <div className="contents">
           <table>
+            <thead>
+              <tr>
+                <th>{producto.descripcion}</th>
+              </tr>
+            </thead>
+            <tbody>
             <tr>
-              <th>Width</th>
-              <th>Height</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
             </tr>
             <tr>
-              <td>3000mm</td>
-              <td>4000mm</td>
+              <th>Lorem ipsum dolor</th>
+              <th>Lorem ipsum dolor</th>
             </tr>
             <tr>
-              <th>Something</th>
-              <th>Something</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
             </tr>
             <tr>
-              <td>200mm</td>
-              <td>200mm</td>
+              <th>Lorem ipsum dolor</th>
+              <th>Lorem ipsum dolor</th>
             </tr>
             <tr>
-              <th>Something</th>
-              <th>Something</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
             </tr>
             <tr>
-              <td>200mm</td>
-              <td>200mm</td>
+              <th>Lorem ipsum dolor</th>
+              <th>Lorem ipsum dolor</th>
             </tr>
             <tr>
-              <th>Something</th>
-              <th>Something</th>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
             </tr>
-            <tr>
-              <td>200mm</td>
-              <td>200mm</td>
-            </tr>
+            </tbody>
           </table>
         </div>
       </div>

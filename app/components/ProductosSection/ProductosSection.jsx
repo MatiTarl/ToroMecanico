@@ -8,31 +8,29 @@ const ProductosSection = () => {
 
   return (
     <main className="h-full w-full py-5 px-1 justify-center items-center flex flex-col">
+      <div className="w-full text-center">
+        <h1 className=" font-anton text-3xl">Productos</h1>
+        <span>Elige entre nuestra amplia gama de juegos mecánicos.</span>
+      </div>
+      {/* Navbar */}
+      <div className="p-4 mb-6">
+        <div className="flex items-center gap-4">
+          <input
+            type="text"
+            placeholder="Buscar productos..."
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+            Buscar
+          </button>
+        </div>
+      </div>
       <div className="grid grid-cols-1 gap-4 justify-center pt-10 w-full">
         {productosToMap.map((producto, key) => {
           return (
-              <div className="flex w-full justify-center items-center" key={key}>
-                {/* <div
-                  className={`w-[90%] h-96 max-w-[250px] rounded-sm border border-rojoprincipal shadow items-center flex flex-col justify-between`}
-                >
-                  <div className="h-1/2 flex justify-start items-center w-full">
-                    <Image
-                      className="w-full p-2"
-                      src={producto.images[0]}
-                      width={80}
-                      height={80}
-                      alt="ImageProtada"
-                    />
-                  </div>
-                  <div className="h-1/3 justify-start flex flex-col w-[80%]">
-                    <h5 className="font-lato">{producto.name}</h5>
-                    <button className=" bg-slate-100 mt-10 rounded-sm h-8 border border-slate-200 shadow">
-                    <a href="" className="text-center ">Consultar precio</a>
-                    </button>
-                  </div>
-                </div> */}
-                <CardProductos producto={producto} />
-              </div>
+            <div className="flex w-full justify-center items-center" key={key}>
+              <CardProductos producto={producto} />
+            </div>
           );
         })}
       </div>
