@@ -45,14 +45,12 @@ export default function Navbar() {
     <nav className="w-full flex fixed top-0 z-50 h-16 bg-black border-b border-white border-opacity-20 ">
       <div className="flex items-center justify-between w-full pl-4 md:px-20">
         {/* Logo */}
-        <a href="/" className="flex items-center max-w-48">
+        <a href="/" className="w-60 h-10 relative">
           <Image
             src={logoTexas3}
             alt="Logo"
-            width={320}
-            height={80}
-            layout="responsive"
-            className=""
+            fill={true}
+            className="max-w-60 max-h-7"
           />
         </a>
         {/* Botón de Menú para Móvil */}
