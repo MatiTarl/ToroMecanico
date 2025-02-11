@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import "./module.css";
-import ImageAllProduct from "@/public/Seccion-ImagenObjetos/TodasLasPiezas-2-3.png";
 import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
-
+import LupaBlack from '@/public/icons/lupa';
 
 export default function ControlDeMando() {
   return (
@@ -18,6 +17,7 @@ export default function ControlDeMando() {
           </h1>
         </div>
         <div>
+          <div className='absolute z-50 w-6 h-6'><LupaBlack/></div>
           <Image
             width={Infinity}
             height={Infinity}
