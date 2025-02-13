@@ -16,37 +16,58 @@ export default function ControlDeMando() {
             </span>
           </h1>
         </div>
-        <div>
-
+        <div className="relative w-full mx-auto">
           {/* palos amarillos */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-[50%] translate-y-[148px] translate-x-6'><Exclamacion/></div>
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[20%] left-[48%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
 
           {/* cuadrado gris, panel de control */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-[50%] translate-y-[175px] translate-x-20'><Exclamacion/></div>
-
-          {/* Cuadrado con texto Danger */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-[50%] -translate-x-7 translate-y-24'><Exclamacion/></div> 
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[13%] left-[64.25%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
 
           {/* toro mecanico negro */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-[50%] translate-x-16 translate-y-24'><Exclamacion/></div>
-
-          {/* lona verde */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 translate-x-12 translate-y-20'><Exclamacion/></div>
-
-          {/* triangulo azul con maquina de corcobeo */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-0 -translate-x-3 translate-y-9'><Exclamacion/></div>
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[45%] left-[65%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
 
           {/* Turbina abajo derecha */}
-          <div className='absolute z-50 w-6 h-6 animate-pulse rounded-full p-1 right-0 -translate-x-6 translate-y-[115px]'><Exclamacion/></div> 
-          <Image
-            width={Infinity}
-            height={Infinity}
-            src={ImageAllProduct169}
-            alt="ImageAllProduct"
-            className="z-10 rounded-br-none md:rounded-s-md"
-          ></Image>
-        </div>
-      </div>
-    </section>
-  )
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[43.5%] right-[8%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
+
+          {/* lona verde */}
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[50%] left-[15%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
+
+          {/* Cuadrado negro con texto Danger */}
+          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 top-[26%] left-[36%]'>
+            <button>
+              <Exclamacion />
+            </button></div>
+
+            {/* triangulo azul con maquina de corcobeo */}
+            <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 top-[18%] right-[6%]'>
+              <button>
+                <Exclamacion />
+              </button></div>
+              {/* Imagen */}
+              <Image
+                width={Infinity}
+                height={Infinity}
+                src={ImageAllProduct169}
+                alt="ImageAllProduct"
+                className="z-10 w-full rounded-br-none md:rounded-s-md"
+              />
+            </div>
+          </div>
+        </section>
+        )
 }
