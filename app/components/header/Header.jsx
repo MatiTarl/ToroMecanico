@@ -53,7 +53,7 @@ const Header = () => {
             autoPlay
             muted
             loop
-            src={`${screenSize.width >= 758 ? "/VideoFondoTexas.mov" : "/VideoFondoTexasCelular.mp4"}`}
+            src={`${screenSize.width >= 758 ? "/VideoFondoTexas.mov" : "/VideoFondoTexasCelular.mov"}`}
             className="object-cover object-center h-full w-full opacity-70"
           ></video>
         </div>
