@@ -1,8 +1,11 @@
+
 import React from 'react';
 import Image from 'next/image';
 import "./module.css";
 import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
 import Exclamacion from '@/public/icons/signoExclamacion';
+import SignoMas from '@/public/icons/signoMas';
+
 
 export default function ControlDeMando() {
   return (
@@ -17,57 +20,45 @@ export default function ControlDeMando() {
           </h1>
         </div>
         <div className="relative w-full mx-auto">
-          {/* palos amarillos */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[20%] left-[48%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
 
-          {/* cuadrado gris, panel de control */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[13%] left-[64.25%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
 
-          {/* toro mecanico negro */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[45%] left-[65%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
+          {/* Botones con animación */}
+          {[
+            { bottom: '20%', left: '48%' , lgBottom:'', lgLeft: ''}, // Palos amarillos
+            { bottom: '13%', left: '64.25%' , lgBottom:'', lgLeft: '' }, // Cuadrado gris
+            { bottom: '45%', left: '65%' , lgBottom:'', lgLeft: '' }, // Toro mecánico
+            { bottom: '43.5%', right: '8%' , lgBottom:'', lgRight: '' }, // Turbina
+            { bottom: '50%', left: '15%' , lgBottom:'', lgLeft: '' }, // Lona verde
+            { top: '26%', left: '36%' , lgTop:'', lgLeft: '' }, // Cuadrado negro
+            { top: '18%', right: '6%' , lgTop:'', lgRight: '' } // Máquina de corcobeo
+          ].map((pos, index) => (
+            <div
+              key={index}
+              className={`absolute w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw]`}
+              style={pos}
+            >
+              {/* Círculo animado */}
+              <div className="absolute w-full h-full bg-white rounded-full animate-pulse-scale"></div>
 
-          {/* Turbina abajo derecha */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[43.5%] right-[8%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
-
-          {/* lona verde */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 bottom-[50%] left-[15%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
-
-          {/* Cuadrado negro con texto Danger */}
-          <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 top-[26%] left-[36%]'>
-            <button>
-              <Exclamacion />
-            </button></div>
-
-            {/* triangulo azul con maquina de corcobeo */}
-            <div className='absolute w-[5vw] h-[5vw] lg:h-10 lg:w-10 animate-pulse rounded-full p-1 top-[18%] right-[6%]'>
-              <button>
-                <Exclamacion />
-              </button></div>
-              {/* Imagen */}
-              <Image
-                width={Infinity}
-                height={Infinity}
-                src={ImageAllProduct169}
-                alt="ImageAllProduct"
-                className="z-10 w-full rounded-br-none md:rounded-s-md"
-              />
+              {/* Signo Más (fijo) */}
+              <button className="flex items-center justify-center bg-white rounded-full w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] top-1/2 left-1/2 transform z-10">
+                <div className='w-[2vw] h-[2vw] lg:w-[1.5vw] lg:h-[1.5vw]'>
+                  <SignoMas />
+                </div>
+              </button>
             </div>
-          </div>
-        </section>
-        )
+          ))}
+
+          {/* Imagen */}
+          <Image
+            width={Infinity}
+            height={Infinity}
+            src={ImageAllProduct169}
+            alt="ImageAllProduct"
+            className="z-10 w-full rounded-br-none md:rounded-s-md"
+          />
+        </div>
+      </div>
+    </section>
+  )
 }
