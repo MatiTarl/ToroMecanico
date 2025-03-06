@@ -5,7 +5,7 @@ import "./module.css";
 
 export default function DescubrirSection() {
   return (
-    <section id="1-Section" className="py-5 md:py-7">
+    <section id="1-Section" className="py-5 md:pt-20">
       <div className="flex flex-col font-roboto">
         <div className="sec2 flex justify-center text-center text-xs px-3 md:px-0 md:text-base">
           <h1>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from 'react';
 import Image from 'next/image';
 import "./module.css";
-import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
+import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/Todas las piezas 16-9.jpg";
 import SignoMas from '@/public/icons/signoMas';
 
 export default function ControlDeMando() {

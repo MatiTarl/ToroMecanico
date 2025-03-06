@@ -36,17 +36,24 @@ const Header = () => {
     <div className="shadow-md shadow-slate-400">
       <Navbar />
       <section className="bg-black h-screen w-full text-center relative overflow-hidden ">
-        <div className="relative z-30 h-full flex flex-col font-sans">
-          <footer className="flex-grow flex flex-col justify-end pb-10">
-            <h3 className="pb-10 text-white font-roboto text-2xl md:text-4xl">
-              Lorem ipsum dolor, adipisicing elit.
-            </h3>
-            <a href="#1-Section">
-              <div className=" md:text-xl font-medium rounded animate-bounce w-7 md:w-10 inline-block text-white">
-                <ArrowDown />
-              </div>
-            </a>
-          </footer>
+        <div className="relative z-30 h-full flex flex-col font-roboto">
+          <div className="w-full mt-60 text-center items-center justify-center flex flex-col">
+            <h1 className="text-5xl font-alfaSlabOne text-slate-50">Texas bull</h1>
+            <span className="h-[1.5px] bg-rojosecundario w-[50%] my-1"></span>
+            <h5 className="text-xl flex items-center justify-center text-white">Años de experiencia brindando juegos mecánicos de calidad.</h5>
+          </div>
+          <a href="/productos" className="flex-col flex items-center py-3">
+            <div className=" md:text-xl font-medium rounded-sm w-auto inline-block px-7 py-2 p-2 transition-all duration-700 text-slate-50 border-2 border-rojoprincipal">
+              Nuestros productos
+            </div>
+          </a>
+        <footer className="flex-grow flex flex-col justify-end pb-10">
+          <a href="#1-Section" className="flex-col flex items-center ">
+            <div className=" md:text-xl font-medium rounded w-auto inline-block text-white border p-2 hover:scale-110 transition-transform duration-300">
+              Ver más
+            </div>
+          </a>
+        </footer>
         </div>
         <div className="absolute top-0 bottom-0 w-full h-full">
           <video
@@ -54,7 +61,7 @@ const Header = () => {
             muted
             loop
             src={`${screenSize.width >= 758 ? "/VideoFondoTexas.mov" : "/VideoFondoTexasCelular.mov"}`}
-            className="object-cover object-center h-full w-full opacity-70"
+            className="object-cover object-center h-full w-full opacity-50"
           ></video>
         </div>
       </section>

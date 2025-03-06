@@ -10,10 +10,15 @@ html {
   --font-geist-anton: "anton", sans-serif;
   --font-roboto: "roboto", sans-serif;
   --font-lato: "lato", sans-serif;
+  --font-alfaSlabOne: "alfaSlabOne", sans-serif;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.font-alfaSlabOne {
+  font-family: var(--font-alfaSlabOne);
 }
 
 .font-anton {
