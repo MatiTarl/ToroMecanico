@@ -43,17 +43,18 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex fixed top-0 z-50 h-16 bg-black border-b border-white border-opacity-20 ">
-      <div className="flex items-center justify-between w-full pl-4 md:px-20">
+      <div className="flex items-center justify-between w-full pl-4 md:px-20 ">
         {/* Logo */}
-        <a href="/" className="w-60 h-10 relative">
+        <a href="/" className="w-60 h-16 relative">
+        <div className="w-full h-full flex items-center justify-center">
           <Image
             src={logoTexas3}
             alt="Logo"
-            fill={true}
-            className="max-w-60 max-h-7"
+            className="w-52"
           />
+        </div>
         </a>
-        {/* Botón de Menú para Móvil */}
+        {/* Botón de Menú para celular */}
         <button
           className="md:hidden text-white focus:outline-none pr-5"
           onClick={toggleMenu}

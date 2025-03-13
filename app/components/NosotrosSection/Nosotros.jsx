@@ -26,7 +26,7 @@ export default function Nosotros() {
               className="object-cover rounded-lg max-w-32 min-h-36 z-10 lg:max-w-80  "
             ></Image>
           </div>
-          <div className="w-[50%] lg:w-[30%] lg:mx-10 lg:h-full flex flex-col text-xs">
+          <div className="w-[50%] lg:w-[30%] lg:mx-10 lg:h-full flex flex-col text-sm">
             <span className="text-black text-left lg:max-w-56">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               quasi nam quam dolorum neque minus ipsam totam enim ut magnam.

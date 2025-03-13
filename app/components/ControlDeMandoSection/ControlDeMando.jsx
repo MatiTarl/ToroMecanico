@@ -1,27 +1,51 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from 'react';
 import Image from 'next/image';
 import "./module.css";
-import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/Todas las piezas 16-9.jpg";
+import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
 import SignoMas from '@/public/icons/signoMas';
 
 export default function ControlDeMando() {
   const [selected, setSelected] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  const modalRef = useRef(null); // Referencia para obtener el tamaño del modal
+  let modalSize = "";
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function ButtonHandler(index, event) {
-    const rect = event.target.getBoundingClientRect(); // Posición del botón en la pantalla
-    const parentRect = event.target.closest(".relative")?.getBoundingClientRect(); // Posición del contenedor
+    const rect = event.target.getBoundingClientRect();
+    const parentRect = event.target.closest(".relative")?.getBoundingClientRect();
     if (!parentRect) return;
 
-    setSelected({
-      index,
-      position: {
-        top: `${rect.top - parentRect.top + rect.height / 2}px`,
-        left: `${rect.left - parentRect.left + rect.width / 2}px`
-      }
-    });
+    const centerX = windowWidth / 2;
+    const modalDirection = rect.left > centerX ? "left" : "right";
+
+    let modalLeft = 5 + rect.left - parentRect.left + rect.width / 2;
+    let modalTop = 10 + rect.top - parentRect.top + rect.height / 2;
+
+    let modalWidth = 300;
+
+    if (parentRect.width >= 1536) {
+      modalWidth = 500;
+      modalTop -= 0;
+    }
+
+    if (modalLeft > 1112 && parentRect.width >= 1280) modalLeft -= modalWidth + 10;
+
+    setSelected({ index, position: { top: `${modalTop}px`, left: `${modalLeft}px` }, modalDirection });
   }
 
   function CloseModal() {
@@ -29,14 +53,22 @@ export default function ControlDeMando() {
   }
 
   const TextoPredefinido = {
-    0: "TEXTO 0 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    1: "TEXTO 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    2: "TEXTO 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    0: "Están recubiertos con goma espuma de alta densidad y forrados con lona Zonda 900.",
+    1: "Equipado con variadores de velocidad de alta calidad, lo que permite un control preciso del juego.",
+    2: "Fabricado en fibra de vidrio de alta resistencia, con montura de cuero y cuernos rellenos de goma espuma, forrados con lona Zonda 900.",
     3: "TEXTO 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    4: "TEXTO 4 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    5: "TEXTO 5 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    6: "TEXTO 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    7: "TEXTO 7 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    4: "Fabricado con lona Zonda 900, un material exclusivo para juegos inflables gracias a su tramado, que evita el desgarre, y su protección UV, que impide la decoloración.",
+    5: "Con un tamaño de 70 cm de ancho y 80 cm de alto, está recubierto con goma espuma para mayor seguridad (parte del derribador).",
+    6: "Equipado con un motor de 1.5 HP, que proporciona un movimiento realista al toro. Además, cuenta con una base de giro con un motor de 1 HP, permitiendo el giro y contragiro tanto del toro mecánico como del derribador.",
+  };
+  const TituloPredefinido = {
+    0: "Brazos del derribador",
+    1: "Control del juego",
+    2: "Toro mecanico",
+    3: "Turbina de 3/4hp",
+    4: "Inflable",
+    5: "Cartel",
+    6: "Maquina de corcoveo",
   };
 
   const buttonPositions = [
@@ -50,7 +82,7 @@ export default function ControlDeMando() {
   ];
 
   return (
-    <section id="1-Section" className="py-5 md:py-7">
+    <section id="1-Section" className="py-5 md:py-7 lg:py-7 xl:py-7 2xl:py-7">
       <div className="flex flex-col font-roboto">
         <div className="animation-right flex justify-center text-center pb-5 md:px-0 md:text-base">
           <h1 className='text-2xl md:text-3xl'>
@@ -59,11 +91,13 @@ export default function ControlDeMando() {
           </h1>
         </div>
         <div className="relative w-full mx-auto">
-          {/* Botones con animación */}
           {buttonPositions.map((pos, index) => (
             <div key={index} className="absolute w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw]" style={pos}>
-              <div className="absolute w-full h-full bg-white rounded-full animate-pulse-scale"></div>
-              <button className="flex items-center justify-center bg-white rounded-full w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] z-10 transform" onClick={(event) => ButtonHandler(index, event)}>
+              <div className="absolute w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] bg-white rounded-full animate-pulse-scale"></div>
+              <button
+                className="flex items-center justify-center bg-white rounded-full w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] z-10 transform"
+                onClick={(event) => ButtonHandler(index, event)}
+              >
                 <div className='w-[2vw] h-[2vw] lg:w-[1.5vw] lg:h-[1.5vw]'>
                   <SignoMas />
                 </div>
@@ -71,7 +105,6 @@ export default function ControlDeMando() {
             </div>
           ))}
 
-          {/* Imagen */}
           <Image
             width={Infinity}
             height={Infinity}
@@ -80,25 +113,26 @@ export default function ControlDeMando() {
             className="z-10 w-full rounded-br-none md:rounded-s-md"
           />
 
-          {/* Modal dentro de la imagen */}
           {selected !== null && (
             <div
-              className="absolute bg-white p-[1vw] rounded-lg shadow-lg w-[30vw] flex flex-col items-end z-50 transition-all duration-300 ease-out opacity-100 scale-100 animate-modal"
+              ref={modalRef} // Asignamos la referencia al modal
+              className={`absolute bg-white p-4 rounded-lg shadow-lg w-[300px] 2xl:w-[500px] flex flex-col items-end z-20 transition-all duration-300 ${
+                selected.modalDirection === "left" ? "animate-slide-in-left" : "animate-slide-in-right"
+              }`}
               style={{
                 top: selected.position.top,
-                left: selected.position.left,
-                transform: "translate(-50%, -50%) scale(0.9)"
+                left: selected.position.left
               }}
             >
               <div className="text-start flex flex-col w-full">
-                <h2 className="text-[1vw] font-bold">Titulo</h2>
-                <p className="text-[1vw]">{TextoPredefinido[selected.index]}</p>
+                <h2 className="text-lg font-bold">{TituloPredefinido[selected.index]}</h2>
+                <p className="text-base">{TextoPredefinido[selected.index]}</p>
               </div>
               <button
-                className="absolute px-[0.5vw] py-[0.25vw] bg-[#ecc238] text-white text-[0.5vw] rounded-sm hover:scale-105 duration-300 transition-transform text-center animate-modal"
+                className="absolute w-5 flex items-center justify-center text-black hover:scale-105 transition-transform"
                 onClick={CloseModal}
               >
-                x
+                <h1>x</h1>
               </button>
             </div>
           )}
