@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 import { useState, useEffect, useRef } from "react";
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import "./module.css";
 import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
-import SignoMas from '@/public/icons/signoMas';
+import SignoMas from "@/public/icons/signoMas";
 
 export default function ControlDeMando() {
   const [selected, setSelected] = useState(null);
@@ -26,8 +26,15 @@ export default function ControlDeMando() {
   }, []);
 
   function ButtonHandler(index, event) {
+    if (selected?.index === index) {
+      CloseModal();
+      return;
+    }
+
     const rect = event.target.getBoundingClientRect();
-    const parentRect = event.target.closest(".relative")?.getBoundingClientRect();
+    const parentRect = event.target
+      .closest(".relative")
+      ?.getBoundingClientRect();
     if (!parentRect) return;
 
     const centerX = windowWidth / 2;
@@ -43,9 +50,13 @@ export default function ControlDeMando() {
       modalTop -= 0;
     }
 
-    if (modalLeft > 1112 && parentRect.width >= 1280) modalLeft -= modalWidth + 10;
+    if (modalLeft > centerX) modalLeft -= modalWidth + 10;
 
-    setSelected({ index, position: { top: `${modalTop}px`, left: `${modalLeft}px` }, modalDirection });
+    setSelected({
+      index,
+      position: { top: `${modalTop}px`, left: `${modalLeft}px` },
+      modalDirection,
+    });
   }
 
   function CloseModal() {
@@ -72,33 +83,44 @@ export default function ControlDeMando() {
   };
 
   const buttonPositions = [
-    { bottom: '20%', left: '48%' },
-    { bottom: '13%', left: '64.25%' },
-    { bottom: '45%', left: '65%' },
-    { bottom: '43.5%', right: '8%' },
-    { bottom: '50%', left: '15%' },
-    { top: '26%', left: '36%' },
-    { top: '18%', right: '6%' }
+    { bottom: "20%", left: "48%" },
+    { bottom: "13%", left: "64.25%" },
+    { bottom: "45%", left: "65%" },
+    { bottom: "43.5%", right: "8%" },
+    { bottom: "50%", left: "15%" },
+    { top: "26%", left: "36%" },
+    { top: "18%", right: "6%" },
   ];
 
   return (
     <section id="1-Section" className="py-5 md:py-7 lg:py-7 xl:py-7 2xl:py-7">
       <div className="flex flex-col font-roboto">
         <div className="animation-right flex justify-center text-center pb-5 md:px-0 md:text-base">
-          <h1 className='text-2xl md:text-3xl'>
-            <span className="text-rojoprincipal font-bold">¡ Descubre </span> más sobre nuestros{" "}
+          <h1 className="text-2xl md:text-3xl">
+            <span className="text-rojoprincipal font-bold">¡ Descubre </span>{" "}
+            más sobre nuestros{" "}
             <span className="text-rojoprincipal font-bold">productos !</span>
           </h1>
         </div>
         <div className="relative w-full mx-auto">
           {buttonPositions.map((pos, index) => (
-            <div key={index} className="absolute w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw]" style={pos}>
-              <div className="absolute w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] bg-white rounded-full animate-pulse-scale"></div>
+            <div
+              key={index}
+              className="absolute items-center justify-center w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw]"
+              style={pos}
+            >
+              <div
+                className={`absolute w-[6vw] h-[6vw] items-center justify-center lg:w-[3vw] lg:h-[3vw] transition-colors duration-300 rounded-full animate-pulse-scale ${
+                  selected?.index === index ? "bg-rojoprincipal" : "bg-white"
+                }`}
+              ></div>
               <button
-                className="flex items-center justify-center bg-white rounded-full w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] z-10 transform"
+                className={`flex items-center justify-center bg-white rounded-full w-[6vw] h-[6vw] lg:w-[3vw] lg:h-[3vw] z-10 transform transition-all duration-300 border border-white ${
+                  selected?.index === index ? "rotate-45" : ""
+                }`}
                 onClick={(event) => ButtonHandler(index, event)}
               >
-                <div className='w-[2vw] h-[2vw] lg:w-[1.5vw] lg:h-[1.5vw]'>
+                <div className="flex items-center justify-center w-[3vw] h-[3vw] lg:w-[1.5vw] lg:h-[1.5vw]">
                   <SignoMas />
                 </div>
               </button>
@@ -112,29 +134,44 @@ export default function ControlDeMando() {
             alt="ImageAllProduct"
             className="z-10 w-full rounded-br-none md:rounded-s-md"
           />
-
-          {selected !== null && (
+          {windowWidth > 500 && selected !== null ? (
             <div
               ref={modalRef} // Asignamos la referencia al modal
-              className={`absolute bg-white p-4 rounded-lg shadow-lg w-[300px] 2xl:w-[500px] flex flex-col items-end z-20 transition-all duration-300 ${
-                selected.modalDirection === "left" ? "animate-slide-in-left" : "animate-slide-in-right"
+              className={`absolute flex bg-white p-4 rounded-lg shadow-lg w-[300px] 2xl:w-[500px] flex-col items-end z-20 transition-all duration-300 ${
+                selected.modalDirection === "left"
+                  ? "animate-slide-in-left"
+                  : "animate-slide-in-right"
               }`}
               style={{
                 top: selected.position.top,
-                left: selected.position.left
+                left: selected.position.left,
               }}
             >
               <div className="text-start flex flex-col w-full">
-                <h2 className="text-lg font-bold">{TituloPredefinido[selected.index]}</h2>
+                <h2 className="text-lg font-bold">
+                  {TituloPredefinido[selected.index]}
+                </h2>
                 <p className="text-base">{TextoPredefinido[selected.index]}</p>
               </div>
-              <button
-                className="absolute w-5 flex items-center justify-center text-black hover:scale-105 transition-transform"
-                onClick={CloseModal}
-              >
-                <h1>x</h1>
-              </button>
             </div>
+          ) : (
+            ""
+          )}
+        </div>
+        <div className="relative w-full mx-auto z-20 min-h-1 transition-all duration-500">
+          {windowWidth < 500 && selected !== null ? (
+            <div
+              className={`flex relative bg-white p-4 shadow-lg w-full flex-col items-end z-10 transition-all duration-300 min-h-40`}
+            >
+              <div className="text-start flex flex-col w-full">
+                <h2 className="text-lg font-bold">
+                  {TituloPredefinido[selected.index]}
+                </h2>
+                <p className="text-base">{TextoPredefinido[selected.index]}</p>
+              </div>
+            </div>
+          ) : (
+            ""
           )}
         </div>
       </div>

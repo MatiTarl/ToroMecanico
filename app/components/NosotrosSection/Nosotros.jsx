@@ -1,6 +1,5 @@
 import React from "react";
-import ImagePersona from "@/public/Nosotros/ImagenDeEjemploPersona.webp";
-import ImageCorporativa from "@/public/Nosotros/fotografia-corporativa.webp";
+import ImageCorporativa from "@/public/Nosotros/FotoAgustinOrtiz.jpeg";
 import Image from "next/image";
 
 export default function Nosotros() {
