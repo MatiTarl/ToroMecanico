@@ -50,8 +50,8 @@ export default function Navbar() {
         <a href="/" className="w-60 h-16 relative">
           <div className="w-full h-full flex items-center justify-center">
             <Image
-              width={200}
-              height={200}
+              width={655}
+              height={63}
               src={logoTexas}
               alt="Logo"
               className="w-52"

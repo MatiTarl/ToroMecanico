@@ -129,8 +129,8 @@ export default function ControlDeMando() {
           ))}
 
           <Image
-            width={200}
-            height={200}
+            width={3992}
+            height={2248}
             src={ImageAllProduct169}
             alt="ImageAllProduct"
             className="z-10 w-full rounded-br-none md:rounded-s-md"

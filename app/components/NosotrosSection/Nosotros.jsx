@@ -18,8 +18,8 @@ export default function Nosotros() {
             <div className=" rounded-md items-end h-[140px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[18%] lg:-translate-x-[13%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
             <div className="w-full items-end justify-end flex">
               <Image
-                height={200}
-                width={200}
+                height={1197}
+                width={2123}
                 src={ImagenAgustin}
                 alt="ImageAllProduct"
                 className="object-cover rounded-t-lg rounded-bl-lg max-w-[40vw] min-h-36 z-10 lg:max-w-80 2xl:max-w-96  "

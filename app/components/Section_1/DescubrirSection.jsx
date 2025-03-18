@@ -43,8 +43,8 @@ export default function DescubrirSection() {
           <div className=" w-full h-full md:max-h-none md:w-1/3 flex justify-end">
             <div className="hidden md:flex rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] [1920px]:translate-y-[17%] lg:-translate-x-[10%] transition-transform "></div>
             <Image
-              width={200}
-              height={200}
+              width={3060}
+              height={4080}
               src={ImageBull}
               alt="ImageHeaderBull_1"
               className="z-10 rounded-md rounded-br-none md:rounded-s-md lg:mr-10"
