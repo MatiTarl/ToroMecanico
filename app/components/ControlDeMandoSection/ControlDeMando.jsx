@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import React from "react";
 import Image from "next/image";
 import "./module.css";
-import ImageAllProduct169 from "@/public/Seccion-ImagenObjetos/TolasLasPiezas-16-9.png";
 import SignoMas from "@/public/icons/signoMas";
 
 export default function ControlDeMando() {
@@ -13,6 +12,7 @@ export default function ControlDeMando() {
   const [windowHeight, setWindowHeight] = useState(0);
   const modalRef = useRef(null); // Referencia para obtener el tamaño del modal
   let modalSize = "";
+  const ImageAllProduct169 = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/iwqhk2vddxqornne9jkb";
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -129,8 +129,8 @@ export default function ControlDeMando() {
           ))}
 
           <Image
-            width={Infinity}
-            height={Infinity}
+            width={200}
+            height={200}
             src={ImageAllProduct169}
             alt="ImageAllProduct"
             className="z-10 w-full rounded-br-none md:rounded-s-md"

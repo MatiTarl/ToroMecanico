@@ -4,7 +4,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./module.css";
-import logoTexas3 from "@/public/LogoNavbar3.png";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -12,6 +11,9 @@ export default function Navbar() {
   const [isOpenProducts, setIsOpenProducts] = useState(false);
   const [isOpenProductsMid, setisOpenProductsMid] = useState(false);
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
+
+  const logoTexas =
+    "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bvzzufahgrzcrgfudio4";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -46,13 +48,15 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-full pl-4 md:px-20 ">
         {/* Logo */}
         <a href="/" className="w-60 h-16 relative">
-        <div className="w-full h-full flex items-center justify-center">
-          <Image
-            src={logoTexas3}
-            alt="Logo"
-            className="w-52"
-          />
-        </div>
+          <div className="w-full h-full flex items-center justify-center">
+            <Image
+              width={200}
+              height={200}
+              src={logoTexas}
+              alt="Logo"
+              className="w-52"
+            />
+          </div>
         </a>
         {/* Botón de Menú para celular */}
         <button
@@ -97,7 +101,13 @@ export default function Navbar() {
             onMouseLeave={() => toggleCloseProductMid()}
             style={{ letterSpacing: "0.1em" }}
           >
-            <button onClick={toggleProduct}>{screenSize.width >= 758 ? <a href="/productos">Productos</a> : "productos" }</button>
+            <button onClick={toggleProduct}>
+              {screenSize.width >= 758 ? (
+                <a href="/productos">Productos</a>
+              ) : (
+                "productos"
+              )}
+            </button>
             <ul
               className={`${
                 isOpenProductsMid && screenSize.width >= 758
@@ -165,12 +175,16 @@ export default function Navbar() {
         {/* Menú de productos*/}
         <div
           className={`${
-            isOpenProducts && isOpen && screenSize.width <= 758 ? "showProducts" : ""
+            isOpenProducts && isOpen && screenSize.width <= 758
+              ? "showProducts"
+              : ""
           } conectorMenu md:hidden w-[5%] items-center justify-center h-[3px] absolute bg-black top-[122px] right-0 left-[50%] z-50 `}
         ></div>
         <ul
           className={`${
-            isOpenProducts && isOpen && screenSize.width <= 758 ? "showProducts" : ""
+            isOpenProducts && isOpen && screenSize.width <= 758
+              ? "showProducts"
+              : ""
           } navbar-menu-Products-animacion rounded-sm border-slate-300 top-28 w-[48%] grid-cols-1 grid text-black bg-white`}
         >
           <li className="py-1">
@@ -183,7 +197,10 @@ export default function Navbar() {
             </a>
           </li>
           <li className="py-1 ">
-            <a className="block px-4 text-center" style={{ letterSpacing: "0.1em" }}>
+            <a
+              className="block px-4 text-center"
+              style={{ letterSpacing: "0.1em" }}
+            >
               Producto
             </a>
           </li>

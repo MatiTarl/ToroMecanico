@@ -11,7 +11,8 @@ import ArrowDown from "@/public/icons/downArrow";
 
 const Header = () => {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
-
+  const videoPantallaGrande = "https://res.cloudinary.com/ddhhhd0lc/video/upload/f_auto:video,q_auto/ytfa3lfkzpgxn6lq5wwt";
+  const VideoPantallaChica = "https://res.cloudinary.com/ddhhhd0lc/video/upload/f_auto:video,q_auto/l6jcympncgagcn0lhkfo";
   useEffect(() => {
     // Verifica que estás en el lado del cliente
     const handleResize = () => {
@@ -60,7 +61,7 @@ const Header = () => {
             autoPlay
             muted
             loop
-            src={`${screenSize.width >= 758 ? "video 16_9 Compimido.mov" : "video celu comprimido.mov"}`}
+            src={`${screenSize.width >= 758 ? videoPantallaGrande : VideoPantallaChica}`}
             className="object-cover object-center h-full w-full opacity-50"
           ></video>
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-import ImageCorporativa from "@/public/Nosotros/FotoAgustinOrtiz.jpeg";
 import Image from "next/image";
 
 export default function Nosotros() {
+  const ImagenAgustin = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bzqxillpa0ptoxi8r0zi";
   return (
     <section className="w-full pb-5 font-roboto">
       <div className="w-full h-auto lg:h-full flex flex-col pt-1 lg:justify-center">
@@ -18,9 +18,9 @@ export default function Nosotros() {
             <div className=" rounded-md items-end h-[140px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[18%] lg:-translate-x-[13%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
             <div className="w-full items-end justify-end flex">
               <Image
-                height={Infinity}
-                width={Infinity}
-                src={ImageCorporativa}
+                height={200}
+                width={200}
+                src={ImagenAgustin}
                 alt="ImageAllProduct"
                 className="object-cover rounded-t-lg rounded-bl-lg max-w-[40vw] min-h-36 z-10 lg:max-w-80 2xl:max-w-96  "
               ></Image>

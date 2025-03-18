@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import ImageBull from "@/public/headerImage1.jpg";
 import "./module.css";
 
 export default function DescubrirSection() {
+  const ImageBull = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/crpmarqpn5h6tkcpsfln"
   return (
     <section id="1-Section" className="py-5 md:pt-20">
       <div className="flex flex-col font-roboto">
@@ -43,8 +43,8 @@ export default function DescubrirSection() {
           <div className=" w-full h-full md:max-h-none md:w-1/3 flex justify-end">
             <div className="hidden md:flex rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] [1920px]:translate-y-[17%] lg:-translate-x-[10%] transition-transform "></div>
             <Image
-              width={Infinity}
-              height={Infinity}
+              width={200}
+              height={200}
               src={ImageBull}
               alt="ImageHeaderBull_1"
               className="z-10 rounded-md rounded-br-none md:rounded-s-md lg:mr-10"
