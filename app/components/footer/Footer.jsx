@@ -50,12 +50,12 @@ export default function Footer() {
           </li>
           <li className="">
             <a className="animated-link-footer block" href="#">
-              Nosotros
+              Productos
             </a>
           </li>
           <li className="">
             <a className="animated-link-footer block" href="#">
-              Servicios
+              Nosotros
             </a>
           </li>
           <li className="">

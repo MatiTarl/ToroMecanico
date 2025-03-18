@@ -7,10 +7,10 @@ export default function DescubrirSection() {
   return (
     <section id="1-Section" className="py-5 md:pt-20">
       <div className="flex flex-col font-roboto">
-        <div className="sec2 flex justify-center text-center text-xs px-3 md:px-0 md:text-base">
+        <div className="sec2 flex justify-center text-center text-sm px-3 md:px-0 md:text-base">
           <h1>
             <span className="text-rojoprincipal font-bold">Texas bull:</span> El
-            proveedor y fabricante internacional de juegos mecanicos -{" "}
+            proveedor y fabricante internacional de juegos mecánicos -{" "}
             <span className="text-rojoprincipal font-bold">
               desde hace más de 10 años.
             </span>
@@ -27,7 +27,7 @@ export default function DescubrirSection() {
               </div>
               <div className="flex flex-col flex-grow justify-center">
                 <h1 className="text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-rojoprincipal font-extrabold">
-                  Toros Mecanicos
+                  Toros mecánicos
                 </h1>
                 <div className="pt-5 md:pt-14">
                   <a href="/productos">

@@ -40,7 +40,7 @@ const Header = () => {
           <div className="w-full mt-60 text-center items-center justify-center flex flex-col">
             <h1 className="text-5xl font-alfaSlabOne text-slate-50">Texas bull</h1>
             <span className="h-[1.5px] bg-rojosecundario w-[50%] lg:w-[30%] 2xl:w-[20%] my-1"></span>
-            <h5 className="text-xl flex items-center justify-center text-white">Años de experiencia brindando juegos de calidad.</h5>
+            <h5 className="text-xl flex items-center justify-center text-white">Años de experiencia brindando juegos de calidad</h5>
           </div>
           <a href="/productos" className="flex-col flex items-center py-3">
             <div className=" md:text-xl font-medium rounded-sm w-auto inline-block px-7 py-2 p-2 transition-all duration-700 text-slate-50 border-2 border-rojoprincipal">
@@ -60,7 +60,7 @@ const Header = () => {
             autoPlay
             muted
             loop
-            src={`${screenSize.width >= 758 ? "/VideoFondoTexas.mov" : "/VideoFondoTexasCelular.mov"}`}
+            src={`${screenSize.width >= 758 ? "video 16_9 Compimido.mov" : "video celu comprimido.mov"}`}
             className="object-cover object-center h-full w-full opacity-50"
           ></video>
         </div>

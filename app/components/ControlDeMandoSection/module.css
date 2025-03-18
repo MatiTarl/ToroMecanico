@@ -48,9 +48,28 @@
       opacity: 1;
     }
   }
-  
+
+  @keyframes pulse-scale-die {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
   .animate-pulse-scale {
     animation: pulse-scale 1.5s infinite ease-in-out;
+  }
+
+  .animate-pulse-scale-die {
+    animation: pulse-scale-die 2.5s infinite ease-in-out;
   }
   
   .animate-modal {

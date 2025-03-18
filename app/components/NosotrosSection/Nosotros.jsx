@@ -5,31 +5,44 @@ import Image from "next/image";
 export default function Nosotros() {
   return (
     <section className="w-full pb-5 font-roboto">
-      <div className="w-full h-auto lg:h-full flex flex-col p-1 lg:justify-center">
+      <div className="w-full h-auto lg:h-full flex flex-col pt-1 lg:justify-center">
         <div className="w-full flex items-center justify-center mb-4">
           <div className="w-[50%] flex flex-col items-center justify-center text-center">
-          <h1 className="text-black text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl font-extrabold lg:mt-4">
-              ¿<span className="text-rojoprincipal">Quienes</span> somos? 
+            <h1 className="text-black text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl font-roboto font-bold lg:mt-4">
+              ¿<span className="text-rojoprincipal">Quienes</span> somos?
             </h1>
-            <span className=" md:hidden h-[1px] bg-rojosecundario w-[50%] mb-2"></span>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full">
-          <div className="w-[50%] lg:w-auto flex lg:items-center justify-center ">
-            <div className=" rounded-md items-start h-[140px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start -translate-x-11 translate-y-4 lg:translate-y-[18%] [1920px]:translate-y-[17%] lg:-translate-x-[13%] transition-transform"></div>
-            <Image
-              height={Infinity}
-              width={Infinity}
-              src={ImageCorporativa}
-              alt="ImageAllProduct"
-              className="object-cover rounded-lg max-w-32 min-h-36 z-10 lg:max-w-80  "
-            ></Image>
+        <div className="flex items-top justify-center w-[100%] pt-3 xl:pt-10">
+          <div className="min-w-[50%] lg:w-auto flex lg:items-end justify-center items-start">
+            <div className=" rounded-md items-end h-[140px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[18%] lg:-translate-x-[13%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
+            <div className="w-full items-end justify-end flex">
+              <Image
+                height={Infinity}
+                width={Infinity}
+                src={ImageCorporativa}
+                alt="ImageAllProduct"
+                className="object-cover rounded-t-lg rounded-bl-lg max-w-[40vw] min-h-36 z-10 lg:max-w-80 2xl:max-w-96  "
+              ></Image>
+            </div>
           </div>
-          <div className="w-[50%] lg:w-[30%] lg:mx-10 lg:h-full flex flex-col text-sm">
-            <span className="text-black text-left lg:max-w-56">
+          <div className="min-w-[50%] mx-5 lg:mx-10 lg:min-h-full flex flex-col text-sm 2xl:text-xl">
+            <h1 className="2xl:text-4xl text-xl font-roboto">Agustin Ortiz</h1>
+            <span className="h-[2px] bg-rojosecundario w-[120px] 2xl:w-[22%] mb-2"></span>
+            <span className="text-black text-left 2xl:max-w-[25vw] mt-5 font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               quasi nam quam dolorum neque minus ipsam totam enim ut magnam.
             </span>
+            <div className="h-full flex items-end mb-10">
+              <div className="pt-5 md:pt-14">
+                <a href="/productos">
+                  <div className="text-sm lg:text-3xl xl:text-4xl 2xl:text-4xl font-medium border-rojoprincipal text-rojoprincipal border-2 px-6 py-0.5 md:px-12 md:py-1.5 inline-block text-center z-40">
+                    Contacto
+                  </div>
+                  <div className=" w-[108px] h-[26px] lg:w-[13.5rem] lg:h-[52px] xl:w-60 xl:h-[54px] 2xl:w-[245px] 2xl:h-[55px] bg-rojoprincipal opacity-20 absolute hover:translate-x-0 hover:-translate-y-7 translate-x-2 -translate-y-5 md:translate-x-4 md:-translate-y-11 md:hover:translate-x-0 lg:hover:-translate-y-[54px] xl:hover:-translate-y-[56px]  2xl:hover:-translate-y-[55px] transition-transform duration-500 z-0 "></div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

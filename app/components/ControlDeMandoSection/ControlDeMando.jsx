@@ -97,9 +97,10 @@ export default function ControlDeMando() {
       <div className="flex flex-col font-roboto">
         <div className="animation-right flex justify-center text-center pb-5 md:px-0 md:text-base">
           <h1 className="text-2xl md:text-3xl">
-            <span className="text-rojoprincipal font-bold">¡ Descubre </span>{" "}
-            más sobre nuestros{" "}
-            <span className="text-rojoprincipal font-bold">productos !</span>
+            <span className="text-rojoprincipal font-bold">¡Mira </span>{" "}
+            nuestro{" "}
+            <span className="text-rojoprincipal font-bold">producto </span>
+            a detalle!
           </h1>
         </div>
         <div className="relative w-full mx-auto">
