@@ -2,15 +2,33 @@ import React from "react";
 import Image from "next/image";
 
 export default function Nosotros() {
-  const ImagenAgustin = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bzqxillpa0ptoxi8r0zi";
+  const ImagenAgustin =
+    "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bzqxillpa0ptoxi8r0zi";
   return (
     <section className="w-full pb-5 font-roboto">
       <div className="w-full h-auto lg:h-full flex flex-col pt-1 lg:justify-center">
         <div className="w-full flex items-center justify-center mb-4">
-          <div className="w-[50%] flex flex-col items-center justify-center text-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-black text-xl lg:text-2xl xl:text-3xl 2xl:text-6xl font-roboto font-bold lg:mt-4">
-              ¿<span className="text-rojoprincipal">Quienes</span> somos?
+              ¿<span className="text-rojoprincipal ">Quienes</span> somos?
             </h1>
+
+            <span className="w-[90%] text-center font-light">
+              <br />
+              Acá en juegos inflables ofrecemos calidad, somos una empresa
+              familiar con más de 20 años de experiencia en la fabricación de
+              juegos inflables y mecánicos. Tenemos toros mecánicos, relojes
+              derribadores, toboganes premium, castillos, carreras de obstáculos
+              y más, con garantía de un año en todos nuestros productos.
+              <br />
+              <br />
+              Desde Mendoza, Argentina,{" "}
+              <span className="text-rojoprincipal ">
+                distribuimos a todo el país
+              </span>{" "}
+              y trabajamos para llevar nuestra calidad y diversión a más lugares
+              del mundo.
+            </span>
           </div>
         </div>
         <div className="flex items-top justify-center w-[100%] pt-3 xl:pt-10">
@@ -30,8 +48,10 @@ export default function Nosotros() {
             <h1 className="2xl:text-4xl text-xl font-roboto">Agustin Ortiz</h1>
             <span className="h-[2px] bg-rojosecundario w-[120px] 2xl:w-[22%] mb-2"></span>
             <span className="text-black text-left 2xl:max-w-[25vw] mt-5 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              quasi nam quam dolorum neque minus ipsam totam enim ut magnam.
+              Soy Agustín Ortiz, encargado en ventas, desarrollo de productos y
+              mi objetivo es seguir haciendo crecer la empresa, llevando
+              nuestros juegos a más lugares y garantizando la mejor experiencia
+              para nuestros clientes.
             </span>
             <div className="h-full flex items-end mb-10">
               <div className="pt-5 md:pt-14">

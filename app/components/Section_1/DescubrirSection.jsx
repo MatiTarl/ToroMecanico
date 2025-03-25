@@ -9,10 +9,9 @@ export default function DescubrirSection() {
       <div className="flex flex-col font-roboto">
         <div className="sec2 flex justify-center text-center text-sm px-3 md:px-0 md:text-base">
           <h1>
-            <span className="text-rojoprincipal font-bold">Texas bull:</span> El
-            proveedor y fabricante internacional de juegos mecánicos -{" "}
+            <span className="text-rojoprincipal font-bold">Juegos inflables:</span> El fabricante más grande de juegos inflables y mecánicos del país hace {" "}
             <span className="text-rojoprincipal font-bold">
-              desde hace más de 10 años.
+             mas de 20 años
             </span>
           </h1>
         </div>
@@ -21,8 +20,7 @@ export default function DescubrirSection() {
             <div className=" flex flex-col flex-wrap content-center h-full">
               <div className="sec2Left w-2/3 flex flex-col flex-grow justify-center">
                 <h1 className="text-sm lg:text-3xl xl:text-4xl 2xl:text-5xl">
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Fames
-                  imperdiet conubia urna eget amet.
+                Toro mecánico totalmente renovado, más liviano y con más capacidad de carga, para mejorar las expectativas del cliente.
                 </h1>
               </div>
               <div className="flex flex-col flex-grow justify-center">

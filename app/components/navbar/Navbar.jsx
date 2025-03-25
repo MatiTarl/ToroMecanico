@@ -13,7 +13,7 @@ export default function Navbar() {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
 
   const logoTexas =
-    "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bvzzufahgrzcrgfudio4";
+    "https://res.cloudinary.com/ddhhhd0lc/image/upload/v1742930868/uqotkc2cxmj7dkiudw20.png";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -51,10 +51,10 @@ export default function Navbar() {
           <div className="w-full h-full flex items-center justify-center">
             <Image
               width={655}
-              height={63}
+              height={100}
               src={logoTexas}
               alt="Logo"
-              className="w-52"
+              className="w-52 md:w-64"
             />
           </div>
         </a>
