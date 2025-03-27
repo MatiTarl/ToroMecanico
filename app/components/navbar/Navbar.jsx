@@ -95,7 +95,7 @@ export default function Navbar() {
               Inicio
             </a>
           </li>
-          <li
+          {/* <li
             className="py-2 md:py-0 animated-link px-4 justify-center flex"
             onMouseEnter={() => toggleOpenProductMid()}
             onMouseLeave={() => toggleCloseProductMid()}
@@ -152,7 +152,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li className="py-2 md:py-0">
             <a
               href="/nosotros"

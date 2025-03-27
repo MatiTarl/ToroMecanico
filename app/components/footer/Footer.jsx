@@ -25,17 +25,17 @@ export default function Footer() {
         <h1 className="hidden md:flex ">Seguinos en nuestras redes:</h1>
         <ul className=" flex justify-center space-x-5 pt-5 md:space-x-5 md:items-center ">
           <li className="transition-transform duration-500 hover:-translate-y-2 ">
-            <a className="" href="#">
+            <a className="" href="https://www.facebook.com/share/1AVUfcnJwc/">
               <FaceIcon className="" />
             </a>
           </li>
           <li className="transition-transform duration-500 hover:-translate-y-2">
-            <a className="" href="#">
+            <a className="" href="https://www.instagram.com/toro.mecanico.argentina?utm_source=qr&igsh=MW9vdXIwbzBuODN2dg==">
               <InstaIcon />
             </a>
           </li>
           <li className="transition-transform duration-500 hover:-translate-y-2">
-            <a className="" href="#">
+            <a className="" href="https://wa.me/542615782398?text=Hola,%20me%20contacto%20desde%20la%20página%20web">
               <WhatsIcon />
             </a>
           </li>
@@ -48,11 +48,11 @@ export default function Footer() {
               Inicio
             </a>
           </li>
-          <li className="">
+          {/* <li className="">
             <a className="animated-link-footer block" href="#">
               Productos
             </a>
-          </li>
+          </li> */}
           <li className="">
             <a className="animated-link-footer block" href="#">
               Nosotros

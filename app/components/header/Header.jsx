@@ -43,7 +43,7 @@ const Header = () => {
             <span className="h-[1.5px] bg-rojosecundario w-[50%] lg:w-[30%] 2xl:w-[20%] my-1"></span>
             <h5 className="text-xl flex items-center justify-center text-white">Fábrica de juegos inflables y mecánicos</h5>
           </div>
-          <a href="/productos" className="flex-col flex items-center py-3">
+          <a href="https://wa.me/542615782398?text=Hola,%20me%20contacto%20desde%20la%20página%20web" className="flex-col flex items-center py-3">
             <div className=" md:text-xl font-medium rounded-sm w-auto inline-block px-7 py-2 p-2 transition-all duration-700 text-slate-50 border-2 border-rojoprincipal">
               Nuestros productos
             </div>
