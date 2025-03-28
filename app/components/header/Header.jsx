@@ -11,8 +11,8 @@ import ArrowDown from "@/public/icons/downArrow";
 
 const Header = () => {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
-  const videoPantallaGrande = "https://res.cloudinary.com/ddhhhd0lc/video/upload/f_auto:video,q_auto/ytfa3lfkzpgxn6lq5wwt";
-  const VideoPantallaChica = "https://res.cloudinary.com/ddhhhd0lc/video/upload/f_auto:video,q_auto/l6jcympncgagcn0lhkfo";
+  const videoPantallaGrande = "https://res.cloudinary.com/darvfxd1u/video/upload/v1743192260/ucqtf0kcpdgecd5jeow7.mov";
+  const VideoPantallaChica = "https://res.cloudinary.com/darvfxd1u/video/upload/v1743192256/fvz6g40j6ljpfr45zxck.mov";
   useEffect(() => {
     // Verifica que estás en el lado del cliente
     const handleResize = () => {

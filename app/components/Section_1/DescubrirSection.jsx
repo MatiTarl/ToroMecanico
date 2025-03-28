@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./module.css";
 
 export default function DescubrirSection() {
-  const ImageBull = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/crpmarqpn5h6tkcpsfln"
+  const ImageBull = "https://res.cloudinary.com/darvfxd1u/image/upload/v1743191819/pudgcqqhsxsgqnckgy7w.jpg"
   return (
     <section id="1-Section" className="py-5 md:pt-20">
       <div className="flex flex-col font-roboto">

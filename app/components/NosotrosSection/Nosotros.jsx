@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Nosotros() {
   const ImagenAgustin =
-    "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/bzqxillpa0ptoxi8r0zi";
+    "https://res.cloudinary.com/darvfxd1u/image/upload/v1743191818/kdqeeykg08s8ot93v20g.jpg";
   return (
     <section className="w-full pb-5 font-roboto">
       <div className="w-full h-auto lg:h-full flex flex-col pt-1 lg:justify-center">

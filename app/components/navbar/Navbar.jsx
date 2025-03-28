@@ -13,7 +13,7 @@ export default function Navbar() {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
 
   const logoTexas =
-    "https://res.cloudinary.com/ddhhhd0lc/image/upload/v1742930868/uqotkc2cxmj7dkiudw20.png";
+    "https://res.cloudinary.com/darvfxd1u/image/upload/v1743191817/dslzyerkgnwwudllhomb.png";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 

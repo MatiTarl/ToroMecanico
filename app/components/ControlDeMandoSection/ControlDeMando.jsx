@@ -12,7 +12,7 @@ export default function ControlDeMando() {
   const [windowHeight, setWindowHeight] = useState(0);
   const modalRef = useRef(null); // Referencia para obtener el tamaño del modal
   let modalSize = "";
-  const ImageAllProduct169 = "https://res.cloudinary.com/ddhhhd0lc/image/upload/f_auto,q_auto/iwqhk2vddxqornne9jkb";
+  const ImageAllProduct169 = "https://res.cloudinary.com/darvfxd1u/image/upload/v1743191822/iwb93tcgt8jeqrssqrhi.png";
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
