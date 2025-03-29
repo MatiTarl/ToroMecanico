@@ -155,7 +155,7 @@ export default function Navbar() {
           </li> */}
           <li className="py-2 md:py-0">
             <a
-              href="/nosotros"
+              href="#nosotros"
               className="animated-link block px-4"
               style={{ letterSpacing: "0.1em" }}
             >
@@ -164,7 +164,7 @@ export default function Navbar() {
           </li>
           <li className="py-2 md:py-0">
             <a
-              href="/contactanos"
+              href="https://wa.me/542615782398?text=Hola,%20me%20contacto%20desde%20la%20página%20web"
               className="animated-link block px-4"
               style={{ letterSpacing: "0.1em" }}
             >

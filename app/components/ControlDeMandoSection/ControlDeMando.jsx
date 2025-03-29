@@ -37,7 +37,7 @@ export default function ControlDeMando() {
       ?.getBoundingClientRect();
     if (!parentRect) return;
 
-    const centerX = windowWidth / 2;
+    const centerX = (windowWidth / 2) - 100;
     const modalDirection = rect.left > centerX ? "left" : "right";
 
     let modalLeft = 5 + rect.left - parentRect.left + rect.width / 2;

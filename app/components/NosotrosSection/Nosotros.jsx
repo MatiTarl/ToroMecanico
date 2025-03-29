@@ -5,7 +5,7 @@ export default function Nosotros() {
   const ImagenAgustin =
     "https://res.cloudinary.com/darvfxd1u/image/upload/v1743191818/kdqeeykg08s8ot93v20g.jpg";
   return (
-    <section className="w-full pb-5 font-roboto">
+    <section id="nosotros" className="w-full pb-5 font-roboto">
       <div className="w-full h-auto lg:h-full flex flex-col pt-1 lg:justify-center">
         <div className="w-full flex items-center justify-center mb-4">
           <div className="flex flex-col items-center justify-center text-center">
@@ -15,7 +15,7 @@ export default function Nosotros() {
 
             <span className="w-[90%] text-center font-light">
               <br />
-              Acá en juegos inflables ofrecemos calidad, somos una empresa
+              En en juegos inflables ofrecemos calidad, somos una empresa
               familiar con más de 20 años de experiencia en la fabricación de
               juegos inflables y mecánicos. Tenemos toros mecánicos, relojes
               derribadores, toboganes premium, castillos, carreras de obstáculos
