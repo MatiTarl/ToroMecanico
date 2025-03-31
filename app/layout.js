@@ -7,6 +7,8 @@ export const metadata = {
     image: [
       {
         url: "https://texasbull.vercel.app/favicon.ico",
+        width: 1200,
+        height: 630,
         alt: "Juegos Inflables"
       }
     ]
