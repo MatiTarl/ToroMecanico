@@ -2,8 +2,8 @@ import "./globals.css";
 import { roboto, anton, lato, alfaSlabOne } from "./fonts/fonts";
 
 export const metadata = {
-  title: "",
-  description: ""
+  title: "Juegos Inflables",
+  description: "Fábrica de juegos inflables y mecánicos."
 };
 
 export default function RootLayout({ children }) {
