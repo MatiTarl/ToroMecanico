@@ -32,14 +32,14 @@ export default function DescubrirSection() {
                     <div className="text-sm lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium border-rojoprincipal text-rojoprincipal border-2 px-6 py-0.5 md:px-12 md:py-1.5 inline-block text-center z-40">
                       Contactanos
                     </div>
-                    <div className=" w-[108px] h-[26px] lg:w-[13.5rem] lg:h-[52px] xl:w-60 xl:h-[54px] 2xl:w-72 2xl:h-[60px]  bg-rojoprincipal opacity-20 absolute hover:translate-x-0 hover:-translate-y-7 translate-x-2 -translate-y-5 md:translate-x-4 md:-translate-y-11 md:hover:translate-x-0 lg:hover:-translate-y-[54px] xl:hover:-translate-y-[56px]  2xl:hover:-translate-y-[62px] transition-transform duration-500 z-0 "></div>
+                    <div className=" w-[131px] h-[26px] lg:w-[270px] lg:h-[54px] xl:w-[302px] xl:h-[54px] 2xl:w-[372px] 2xl:h-[60px]  bg-rojoprincipal opacity-20 absolute hover:translate-x-0 hover:-translate-y-7 translate-x-2 -translate-y-5 md:translate-x-4 md:-translate-y-11 md:hover:translate-x-0 lg:hover:-translate-y-[54px] xl:hover:-translate-y-[56px]  2xl:hover:-translate-y-[62px] transition-transform duration-500 z-0 "></div>
                   </a>
                 </div>
               </div>
             </div>
           </div>
           <div className=" w-full h-full md:max-h-none md:w-1/3 flex justify-end">
-            <div className="hidden md:flex rounded-md h-3/4 w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] [1920px]:translate-y-[17%] lg:-translate-x-[10%] transition-transform "></div>
+            <div className="hidden md:flex rounded-md h-[38vw] w-1/6 2xl:h-3/4 z-0 bg-rojoprincipal opacity-50 absolute justify-start lg:translate-y-[18%] 2xl:-translate-x-[3%] lg:-translate-x-[10%] transition-transform "></div>
             <Image
               width={3060}
               height={4080}
