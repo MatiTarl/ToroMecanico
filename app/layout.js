@@ -1,9 +1,16 @@
 import "./globals.css";
-import { roboto, anton, lato, alfaSlabOne } from "./fonts/fonts";
 
 export const metadata = {
   title: "Juegos Inflables",
-  description: "Fábrica de juegos inflables y mecánicos."
+  description: "Fábrica de juegos inflables y mecánicos.",
+  openGraph: {
+    image: [
+      {
+        url: "https://texasbull.vercel.app/favicon.ico",
+        alt: "Juegos Inflables"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
