@@ -1,13 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Navbar from "../navbar/Navbar";
 import { useState, useEffect } from "react";
-
-// --------------------IMPORT ICONOS START---------------------
-import imageIcon from "@/public/icons/TexasBull_2.0.png";
-import ArrowDown from "@/public/icons/downArrow";
-// --------------------IMPORT ICONOS END---------------------
 
 const Header = () => {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
@@ -61,6 +55,7 @@ const Header = () => {
             autoPlay
             muted
             loop
+            playsInline
             src={`${screenSize.width >= 758 ? videoPantallaGrande : VideoPantallaChica}`}
             className="object-cover object-center h-full w-full opacity-50"
           ></video>
