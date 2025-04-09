@@ -33,7 +33,7 @@ export default function Nosotros() {
         </div>
         <div className="flex items-top justify-center w-[100%] pt-3 xl:pt-10">
           <div className="min-w-[50%] lg:w-auto flex lg:items-end justify-center items-start">
-            <div className=" rounded-md items-end h-[140px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[18%] lg:-translate-x-[13%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
+            <div className=" rounded-md items-end h-[200px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[10%] lg:-translate-x-[2%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
             <div className="w-full items-end justify-end flex">
               <Image
                 height={1197}
