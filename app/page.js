@@ -7,7 +7,7 @@ import WhatsAppButton from "./components/whatsappButton/BotonGeneralWhatsapp";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* <WhatsAppButton/> */}
+      <WhatsAppButton/>
       <Header />
       <DescubrirSection/>
       <ControlDeMando/>

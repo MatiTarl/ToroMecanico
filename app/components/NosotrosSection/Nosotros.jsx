@@ -33,7 +33,7 @@ export default function Nosotros() {
         </div>
         <div className="flex items-top justify-center w-[100%] pt-3 xl:pt-10">
           <div className="min-w-[50%] lg:w-auto flex lg:items-end justify-center items-start">
-            <div className=" rounded-md items-end h-[200px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[10%] lg:-translate-x-[2%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
+            <div className=" rounded-md items-end h-[200px] w-1/6 z-0 bg-rojoprincipal opacity-50 absolute justify-end -translate-x-[10vw] -translate-y-[2vw] lg:translate-y-[10%] lg:translate-x-[50%] 2xl:translate-y-[10%] 2xl:translate-x-[75%] transition-transform"></div>
             <div className="w-full items-end justify-end flex">
               <Image
                 height={1197}
@@ -46,7 +46,7 @@ export default function Nosotros() {
           </div>
           <div className="min-w-[50%] mx-5 lg:mx-10 lg:min-h-full flex flex-col text-sm 2xl:text-xl">
             <h1 className="2xl:text-4xl text-xl font-roboto">Agustin Ortiz</h1>
-            <span className="h-[2px] bg-rojosecundario w-[120px] 2xl:w-[22%] mb-2"></span>
+            <span className="h-[2px] bg-rojosecundario m-3 w-[120px] 2xl:w-[22%] mb-2"></span>
             <span className="text-black text-left 2xl:max-w-[25vw] mt-5 font-light">
               Soy Agustín Ortiz, encargado en ventas, desarrollo de productos y
               mi objetivo es seguir haciendo crecer la empresa, llevando
